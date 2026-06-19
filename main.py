@@ -4,16 +4,17 @@ Run with:  python main.py
 """
 
 from parser.pdf_parser import PDFParser
+from processor.multimodal_processor import MultimodalProcessor
 
 
 def main():
     # ── Config ────────────────────────────────────────────────────────────────
-    PDF_PATH   = "data/pdfs/sample.pdf"   
+    PDF_PATH   = "data/pdfs/sample.pdf"   # ← point this at your new PDF's filename
     OUTPUT_DIR = "output"
 
-    # ── Parse ─────────────────────────────────────────────────────────────────
+    # ── Step 2: Parse ─────────────────────────────────────────────────────────
     parser     = PDFParser(output_dir=OUTPUT_DIR)
-    parsed_doc = parser.parse(PDF_PATH)
+    parsed_doc = parser.parse(PDF_PATH)   # clean=True by default: wipes old output first
 
     # ── Save ──────────────────────────────────────────────────────────────────
     output_path = parser.save_to_json(parsed_doc)
@@ -51,6 +52,16 @@ def main():
         print(f"  Size    : {img.width}×{img.height} px")
         print(f"  Saved   : {img.image_path}")
         print(f"  Caption : {img.caption}")
+
+    # ── Step 3: Multimodal Processing ────────────────────────────────────────
+    mm_processor   = MultimodalProcessor()
+    processed_path = mm_processor.process_file(output_path)
+
+    print("\n" + "─" * 50)
+    print("  MULTIMODAL PROCESSING COMPLETE")
+    print("─" * 50)
+    print(f"  Processed JSON : {processed_path}")
+    print("─" * 50)
 
 
 if __name__ == "__main__":

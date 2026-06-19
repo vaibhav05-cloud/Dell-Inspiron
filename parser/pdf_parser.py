@@ -78,12 +78,32 @@ class PDFParser:
         self.images_dir.mkdir(parents=True, exist_ok=True)
         logger.info(f"Output folder ready → {self.output_dir.resolve()}")
 
+    def _clean_output_dir(self):
+        """Wipe images + JSON left over from a previous PDF before starting a new one."""
+        removed = 0
+
+        if self.images_dir.exists():
+            for f in self.images_dir.iterdir():
+                if f.is_file():
+                    f.unlink()
+                    removed += 1
+
+        for f in self.output_dir.glob("*.json"):
+            f.unlink()
+            removed += 1
+
+        if removed:
+            logger.info(f"🧹  Cleaned {removed} old file(s) from previous run")
+
     # ── Public API ────────────────────────────────────────────────────────────
 
-    def parse(self, pdf_path: str) -> ParsedDocument:
+    def parse(self, pdf_path: str, clean: bool = True) -> ParsedDocument:
         pdf_path = Path(pdf_path)
         if not pdf_path.exists():
             raise FileNotFoundError(f"PDF not found: {pdf_path}")
+
+        if clean:
+            self._clean_output_dir()
 
         logger.info(f"Opening PDF → {pdf_path.name}")
         doc = fitz.open(str(pdf_path))

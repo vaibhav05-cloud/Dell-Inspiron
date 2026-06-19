@@ -335,7 +335,8 @@
       ],
       "raw_text": "\n",
       "caption": "No caption found",
-      "block_type": "table"
+      "block_type": "table",
+      "markdown": "| Column 1 |\n| --- |\n|  |"
     },
     {
       "page_number": 8,
@@ -347,7 +348,8 @@
       "rows": [],
       "raw_text": " | \n",
       "caption": "No caption found",
-      "block_type": "table"
+      "block_type": "table",
+      "markdown": "| Column 1 | Column 2 |\n| --- | --- |"
     },
     {
       "page_number": 9,
@@ -389,7 +391,8 @@
       ],
       "raw_text": " |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  | ",
       "caption": "No caption found",
-      "block_type": "table"
+      "block_type": "table",
+      "markdown": "| Column 1 | Column 2 | Column 3 | Column 4 | Column 5 | Column 6 | Column 7 | Column 8 | Column 9 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  |  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |  |"
     },
     {
       "page_number": 9,
@@ -414,7 +417,8 @@
       ],
       "raw_text": "Metric | Sales\nMarket Size | $50 Billion\nUser Satisfaction | 85%\nGrowth Rate | 10%",
       "caption": "No caption found",
-      "block_type": "table"
+      "block_type": "table",
+      "markdown": "| Metric | Sales |\n| --- | --- |\n| Market Size | $50 Billion |\n| User Satisfaction | 85% |\n| Growth Rate | 10% |"
     },
     {
       "page_number": 10,
@@ -426,7 +430,8 @@
       "rows": [],
       "raw_text": " | \n",
       "caption": "No caption found",
-      "block_type": "table"
+      "block_type": "table",
+      "markdown": "| Column 1 | Column 2 |\n| --- | --- |"
     }
   ],
   "images": [
@@ -438,7 +443,8 @@
       "caption": "No caption found",
       "width": 800,
       "height": 686,
-      "block_type": "image"
+      "block_type": "image",
+      "description": "The image shows a man dressed in a suit and tie, wearing glasses, and holding a coffee cup with a logo on it. He is standing against a plain, light-colored background. The man has short, dark hair and a slight smile on his face. The overall setting appears to be professional and casual at the same time."
     },
     {
       "page_number": 4,
@@ -448,7 +454,8 @@
       "caption": "No caption found",
       "width": 1536,
       "height": 1096,
-      "block_type": "image"
+      "block_type": "image",
+      "description": "The image contains multiple charts and graphs. The top left is a bar chart with four data series labeled A, B, C, and D, showing values across three categories numbered 1, 2, and 3. The top right is a bubble chart with axes labeled from 80 to 102 on the vertical axis and 0 to 60 on the horizontal axis, with bubble sizes representing different values. The bottom left is a line chart with three data series labeled A, B, and C, showing values across 11 categories numbered 1 to 11. The bottom right contains two smaller charts: the top one is a line chart labeled A with values from 0 to 30 across 12 categories numbered 1 to 12, and the bottom one is a bar chart labeled B with values up to 300 across 12 categories numbered 1 to 12."
     },
     {
       "page_number": 5,
@@ -458,7 +465,8 @@
       "caption": "No caption found",
       "width": 1707,
       "height": 1138,
-      "block_type": "image"
+      "block_type": "image",
+      "description": "The image shows a person holding a smartphone displaying a home automation app interface. The screen shows controls for various devices, including lights, a thermostat, and security cameras. In the background, there is a smart home control panel mounted on the wall, with icons for lighting, security, and other home functions. The setting appears to be a modern, well-lit room with minimalistic decor."
     },
     {
       "page_number": 5,
@@ -468,7 +476,8 @@
       "caption": "No caption found",
       "width": 1200,
       "height": 800,
-      "block_type": "image"
+      "block_type": "image",
+      "description": "The image shows a person holding a smartphone displaying a smart home control app interface. The app screen features various icons for controlling different aspects of a home, such as lighting, thermostat, security, music, and electricity. In the background, there is a modern living room with a sofa, a coffee table, and a framed picture on the wall. The setting appears to be a cozy indoor environment with natural light coming through a window."
     },
     {
       "page_number": 6,
@@ -478,7 +487,8 @@
       "caption": "No caption found",
       "width": 643,
       "height": 646,
-      "block_type": "image"
+      "block_type": "image",
+      "description": "The image shows a circle divided into three colored segments: red, blue, and yellow. The red segment occupies the largest portion of the circle, followed by the yellow segment, and the blue segment is the smallest. The boundaries between the segments are straight lines radiating from the center of the circle."
     },
     {
       "page_number": 6,
@@ -488,7 +498,8 @@
       "caption": "No caption found",
       "width": 752,
       "height": 572,
-      "block_type": "image"
+      "block_type": "image",
+      "description": "The image shows a series of vertical black bars with white spaces between them, arranged in a grid-like pattern. The white spaces contain small black dots arranged in a dotted grid. The black bars appear to be evenly spaced and have a consistent width throughout the image. The overall effect is a structured, repeating pattern of bars and dots."
     }
   ]
 }
