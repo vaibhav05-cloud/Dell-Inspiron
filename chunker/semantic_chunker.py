@@ -210,72 +210,56 @@ class SemanticTextChunker:
 
 
 if __name__ == "__main__":
+    import argparse
+    import sys
+    from pathlib import Path
+
+    parser = argparse.ArgumentParser(
+        description="Chunk processed JSON semantically."
+    )
+    parser.add_argument(
+        "--input",
+        default="output/sample_processed.json",
+        help="Path to the processed JSON file (default: output/sample_processed.json)"
+    )
+    parser.add_argument(
+        "--output",
+        default="output/chunks.json",
+        help="Path to write the chunks.json (default: output/chunks.json)"
+    )
+    args = parser.parse_args()
+
+    input_path = Path(args.input)
+    if not input_path.exists():
+        print(f"Error: Input file not found: {input_path}")
+        print("Please specify the correct processed file using --input")
+        sys.exit(1)
 
     chunker = SemanticTextChunker()
 
-    print("\nLoading processed JSON...")
-
-    data = chunker.load_processed_json(
-        "output/sample_processed.json"
-    )
+    print(f"\nLoading processed JSON from {input_path}...")
+    data = chunker.load_processed_json(str(input_path))
 
     # -----------------------
     # Text Chunks
     # -----------------------
-
-    text_chunks, next_id = (
-        chunker.build_text_chunks(data)
-    )
-
-    print(
-        f"Text Chunks: {len(text_chunks)}"
-    )
+    text_chunks, next_id = chunker.build_text_chunks(data)
+    print(f"Text Chunks: {len(text_chunks)}")
 
     # -----------------------
     # Table Chunks
     # -----------------------
-
-    table_chunks, next_id = (
-        chunker.build_table_chunks(
-            data,
-            next_id
-        )
-    )
-
-    print(
-        f"Table Chunks: {len(table_chunks)}"
-    )
+    table_chunks, next_id = chunker.build_table_chunks(data, next_id)
+    print(f"Table Chunks: {len(table_chunks)}")
 
     # -----------------------
     # Image Chunks
     # -----------------------
+    image_chunks, next_id = chunker.build_image_chunks(data, next_id)
+    print(f"Image Chunks: {len(image_chunks)}")
 
-    image_chunks, next_id = (
-        chunker.build_image_chunks(
-            data,
-            next_id
-        )
-    )
+    all_chunks = text_chunks + table_chunks + image_chunks
+    print(f"\nTotal Chunks: {len(all_chunks)}")
 
-    print(
-        f"Image Chunks: {len(image_chunks)}"
-    )
-
-    all_chunks = (
-        text_chunks
-        + table_chunks
-        + image_chunks
-    )
-
-    print(
-        f"\nTotal Chunks: {len(all_chunks)}"
-    )
-
-    chunker.save_chunks(
-        all_chunks,
-        "output/chunks.json"
-    )
-
-    print(
-        "\nSemantic chunking pipeline completed successfully!"
-    )
+    chunker.save_chunks(all_chunks, args.output)
+    print("\nSemantic chunking pipeline completed successfully!")

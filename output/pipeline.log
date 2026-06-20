@@ -1,0 +1,468 @@
+03:02:28  [INFO]  ============================================================
+03:02:28  [INFO]    RUNNING GRAPH-RAG INGESTION PIPELINE
+03:02:28  [INFO]  ============================================================
+03:02:28  [INFO]  Checkpoint hit: 'output\chunks.json' already exists. Skipping Parsing, Multimodal Processing, and Chunking.
+03:02:28  [INFO]  Checkpoint hit: 'output\entities.json' already exists. Skipping Entity Extraction.
+03:02:28  [INFO]  Checkpoint hit: 'output\relationships.json' already exists. Skipping Relationship Extraction.
+03:02:28  [INFO]  Starting Neo4j Graph Ingestion...
+03:02:28  [INFO]    Pre-ingestion validation passed ✓
+03:02:28  [INFO]  Connecting to Neo4j at neo4j+s://23aa2db5.databases.neo4j.io …
+03:02:30  [INFO]  Neo4j connection verified ✓
+03:02:30  [INFO]  
+══════════════════════════════════════════════════
+03:02:30  [INFO]    NEO4J GRAPH INGESTION
+03:02:30  [INFO]  ══════════════════════════════════════════════════
+03:02:30  [INFO]  Setting up Neo4j schema …
+03:02:30  [INFO]    Ensuring constraint: entity_id_unique
+03:02:30  [INFO]    Ensuring constraint: chunk_id_unique
+03:02:30  [INFO]  Received notification from DBMS server: <GqlStatusObject gql_status='00NA0', status_description="note: successful completion - index or constraint already exists. The command 'CREATE CONSTRAINT entity_id_unique IF NOT EXISTS FOR (e:Entity) REQUIRE (e.entity_id) IS UNIQUE' has no effect. The index or constraint specified by 'CONSTRAINT entity_id_unique FOR (e:Entity) REQUIRE (e.entity_id) IS UNIQUE' already exists.", position=None, raw_classification='SCHEMA', classification=<NotificationClassification.SCHEMA: 'SCHEMA'>, raw_severity='INFORMATION', severity=<NotificationSeverity.INFORMATION: 'INFORMATION'>, diagnostic_record={'_classification': 'SCHEMA', '_severity': 'INFORMATION', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'CREATE CONSTRAINT entity_id_unique IF NOT EXISTS FOR (e:Entity) REQUIRE e.entity_id IS UNIQUE'
+03:02:30  [INFO]    Constraints ready ✓
+03:02:30  [INFO]    Ensuring index: entity_name_idx
+03:02:30  [INFO]  Received notification from DBMS server: <GqlStatusObject gql_status='00NA0', status_description="note: successful completion - index or constraint already exists. The command 'CREATE CONSTRAINT chunk_id_unique IF NOT EXISTS FOR (e:Chunk) REQUIRE (e.chunk_id) IS UNIQUE' has no effect. The index or constraint specified by 'CONSTRAINT chunk_id_unique FOR (e:Chunk) REQUIRE (e.chunk_id) IS UNIQUE' already exists.", position=None, raw_classification='SCHEMA', classification=<NotificationClassification.SCHEMA: 'SCHEMA'>, raw_severity='INFORMATION', severity=<NotificationSeverity.INFORMATION: 'INFORMATION'>, diagnostic_record={'_classification': 'SCHEMA', '_severity': 'INFORMATION', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'CREATE CONSTRAINT chunk_id_unique IF NOT EXISTS FOR (c:Chunk) REQUIRE c.chunk_id IS UNIQUE'
+03:02:30  [INFO]    Ensuring index: entity_type_idx
+03:02:30  [INFO]  Received notification from DBMS server: <GqlStatusObject gql_status='00NA0', status_description="note: successful completion - index or constraint already exists. The command 'CREATE RANGE INDEX entity_name_idx IF NOT EXISTS FOR (e:Entity) ON (e.entity_name)' has no effect. The index or constraint specified by 'RANGE INDEX entity_name_idx FOR (e:Entity) ON (e.entity_name)' already exists.", position=None, raw_classification='SCHEMA', classification=<NotificationClassification.SCHEMA: 'SCHEMA'>, raw_severity='INFORMATION', severity=<NotificationSeverity.INFORMATION: 'INFORMATION'>, diagnostic_record={'_classification': 'SCHEMA', '_severity': 'INFORMATION', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'CREATE INDEX entity_name_idx IF NOT EXISTS FOR (e:Entity) ON (e.entity_name)'
+03:02:30  [INFO]    Ensuring index: chunk_page_idx
+03:02:30  [INFO]  Received notification from DBMS server: <GqlStatusObject gql_status='00NA0', status_description="note: successful completion - index or constraint already exists. The command 'CREATE RANGE INDEX entity_type_idx IF NOT EXISTS FOR (e:Entity) ON (e.entity_type)' has no effect. The index or constraint specified by 'RANGE INDEX entity_type_idx FOR (e:Entity) ON (e.entity_type)' already exists.", position=None, raw_classification='SCHEMA', classification=<NotificationClassification.SCHEMA: 'SCHEMA'>, raw_severity='INFORMATION', severity=<NotificationSeverity.INFORMATION: 'INFORMATION'>, diagnostic_record={'_classification': 'SCHEMA', '_severity': 'INFORMATION', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'CREATE INDEX entity_type_idx IF NOT EXISTS FOR (e:Entity) ON (e.entity_type)'
+03:02:30  [INFO]    Indexes ready ✓
+03:02:30  [INFO]  Schema setup complete ✓
+03:02:30  [INFO]  Received notification from DBMS server: <GqlStatusObject gql_status='00NA0', status_description="note: successful completion - index or constraint already exists. The command 'CREATE RANGE INDEX chunk_page_idx IF NOT EXISTS FOR (e:Chunk) ON (e.page_number)' has no effect. The index or constraint specified by 'RANGE INDEX chunk_page_idx FOR (e:Chunk) ON (e.page_number)' already exists.", position=None, raw_classification='SCHEMA', classification=<NotificationClassification.SCHEMA: 'SCHEMA'>, raw_severity='INFORMATION', severity=<NotificationSeverity.INFORMATION: 'INFORMATION'>, diagnostic_record={'_classification': 'SCHEMA', '_severity': 'INFORMATION', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'CREATE INDEX chunk_page_idx IF NOT EXISTS FOR (c:Chunk) ON (c.page_number)'
+03:02:30  [INFO]  Ingesting 2238 entities …
+03:03:00  [INFO]    Batch 1: 100 entities merged
+03:03:22  [INFO]    Batch 2: 100 entities merged
+03:03:44  [INFO]    Batch 3: 100 entities merged
+03:04:06  [INFO]    Batch 4: 100 entities merged
+03:04:31  [INFO]    Batch 5: 100 entities merged
+03:05:03  [INFO]    Batch 6: 100 entities merged
+03:05:25  [INFO]    Batch 7: 100 entities merged
+03:05:47  [INFO]    Batch 8: 100 entities merged
+03:06:09  [INFO]    Batch 9: 100 entities merged
+03:06:39  [INFO]    Batch 10: 100 entities merged
+03:07:04  [INFO]    Batch 11: 100 entities merged
+03:07:33  [INFO]    Batch 12: 100 entities merged
+03:08:02  [INFO]    Batch 13: 100 entities merged
+03:08:25  [INFO]    Batch 14: 100 entities merged
+03:08:46  [INFO]    Batch 15: 100 entities merged
+03:09:09  [INFO]    Batch 16: 100 entities merged
+03:09:42  [INFO]    Batch 17: 100 entities merged
+03:10:07  [INFO]    Batch 18: 100 entities merged
+03:10:30  [INFO]    Batch 19: 100 entities merged
+03:10:53  [INFO]    Batch 20: 100 entities merged
+03:11:23  [INFO]    Batch 21: 100 entities merged
+03:11:50  [INFO]    Batch 22: 100 entities merged
+03:11:59  [INFO]    Batch 23: 38 entities merged
+03:11:59  [INFO]    Entity ingestion done — 2238 entities, 247 chunks, 2238 APPEARS_IN edges
+03:11:59  [INFO]  Ingesting 1849 relationships …
+03:12:13  [INFO]    Batch 1: 100 relationships merged
+03:12:27  [INFO]    Batch 2: 100 relationships merged
+03:12:40  [INFO]    Batch 3: 100 relationships merged
+03:12:51  [INFO]    Batch 4: 100 relationships merged
+03:13:03  [INFO]    Batch 5: 100 relationships merged
+03:13:15  [INFO]    Batch 6: 100 relationships merged
+03:13:26  [INFO]    Batch 7: 100 relationships merged
+03:13:38  [INFO]    Batch 8: 100 relationships merged
+03:13:55  [INFO]    Batch 9: 100 relationships merged
+03:14:09  [INFO]    Batch 10: 100 relationships merged
+03:14:21  [INFO]    Batch 11: 100 relationships merged
+03:14:33  [INFO]    Batch 12: 100 relationships merged
+03:14:45  [INFO]    Batch 13: 100 relationships merged
+03:14:58  [INFO]    Batch 14: 100 relationships merged
+03:15:14  [INFO]    Batch 15: 100 relationships merged
+03:15:35  [INFO]    Batch 16: 100 relationships merged
+03:15:46  [INFO]    Batch 17: 100 relationships merged
+03:15:58  [INFO]    Batch 18: 100 relationships merged
+03:16:04  [INFO]    Batch 19: 49 relationships merged
+03:16:04  [INFO]    Relationship ingestion done — 1849 relationships across 11 types
+03:16:04  [INFO]  
+══════════════════════════════════════════════════
+03:16:04  [INFO]    INGESTION COMPLETE
+03:16:04  [INFO]  ══════════════════════════════════════════════════
+03:16:04  [INFO]    entity_nodes              : 2238
+03:16:04  [INFO]    chunk_nodes               : 247
+03:16:04  [INFO]    appears_in_edges          : 2238
+03:16:04  [INFO]    total_relationships       : 1849
+03:16:04  [INFO]    type_BELONGS_TO           : 94
+03:16:04  [INFO]    type_RELATED_TO           : 560
+03:16:04  [INFO]    type_PART_OF              : 361
+03:16:04  [INFO]    type_USES                 : 510
+03:16:04  [INFO]    type_IMPROVES             : 31
+03:16:04  [INFO]    type_CONTRIBUTES_TO       : 124
+03:16:04  [INFO]    type_LOCATED_IN           : 78
+03:16:04  [INFO]    type_DEPENDS_ON           : 57
+03:16:04  [INFO]    type_CUSTOM               : 10
+03:16:04  [INFO]    type_REDUCES              : 11
+03:16:04  [INFO]    type_INCREASES            : 13
+03:16:04  [INFO]  ══════════════════════════════════════════════════
+03:16:04  [INFO]  Running post-ingestion graph health check …
+03:16:05  [INFO]    Entity nodes      : 2238
+03:16:05  [INFO]    Chunk nodes       : 247
+03:16:05  [INFO]    APPEARS_IN edges  : 2238
+03:16:05  [INFO]    Relationship edges: 1849
+03:16:05  [INFO]      BELONGS_TO           : 94
+03:16:05  [INFO]      CONTRIBUTES_TO       : 124
+03:16:05  [INFO]      CUSTOM               : 10
+03:16:05  [INFO]      DEPENDS_ON           : 57
+03:16:05  [INFO]      IMPROVES             : 31
+03:16:05  [INFO]      INCREASES            : 13
+03:16:05  [INFO]      LOCATED_IN           : 78
+03:16:05  [INFO]      PART_OF              : 361
+03:16:05  [INFO]      REDUCES              : 11
+03:16:05  [INFO]      RELATED_TO           : 560
+03:16:05  [INFO]      USES                 : 510
+03:16:05  [INFO]    No orphaned entities ✓
+03:16:05  [INFO]  Health check complete ✓
+03:16:05  [INFO]  Neo4j connection closed
+03:16:05  [INFO]  Neo4j Graph Construction completed in 816945.9 ms.
+03:16:05  [INFO]  Starting FAISS Vector Indexing...
+03:16:05  [INFO]  Stage 2: Initializing Semantic Retrieval Agent …
+03:16:14  [INFO]  No device provided, using cpu
+03:16:14  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+03:16:14  [WARNING]  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+03:16:14  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+03:16:15  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+03:16:15  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+03:16:15  [INFO]  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+03:16:15  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+03:16:15  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+03:16:15  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+03:16:16  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+03:16:16  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+03:16:16  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+03:16:16  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+03:16:16  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+03:16:17  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+03:16:17  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:16:17  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+03:16:18  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+03:16:18  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:16:18  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:16:19  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:16:19  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+03:16:19  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+03:16:19  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:16:19  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+03:16:20  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:16:20  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+03:16:20  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+03:16:20  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+03:16:20  [INFO]  HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+03:16:21  [INFO]  HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+03:16:21  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+03:16:21  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+03:16:22  [INFO]  HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+03:16:22  [INFO]    Loading cached FAISS index from output\faiss_index
+03:16:22  [INFO]  Loading faiss with AVX2 support.
+03:16:22  [INFO]  Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+03:16:22  [INFO]  Loading faiss.
+03:16:22  [INFO]  Successfully loaded faiss.
+03:16:22  [INFO]    Loaded 384 chunks for lookup
+03:16:22  [INFO]    FAISS index loaded from cache ✓
+03:16:22  [INFO]  Embedding Storage completed in 17408.6 ms.
+03:16:22  [INFO]  ============================================================
+03:16:22  [INFO]    INGESTION PIPELINE COMPLETE
+03:16:22  [INFO]  ============================================================
+03:16:22  [INFO]    Parsing                       :      0.0 ms
+03:16:22  [INFO]    Chunking                      :      0.0 ms
+03:16:22  [INFO]    Entity Extraction             :      0.0 ms
+03:16:22  [INFO]    Relationship Extraction       :      0.0 ms
+03:16:22  [INFO]    Graph Construction            : 816945.9 ms
+03:16:22  [INFO]    Embedding Storage             :  17408.6 ms
+03:16:22  [INFO]  ============================================================
+03:17:21  [INFO]  Initializing Retrieval Pipeline and Answer Synthesis Chain...
+03:17:21  [INFO]  
+03:17:21  [INFO]  ==================================================
+03:17:21  [INFO]    AGENTIC RETRIEVAL PIPELINE
+03:17:21  [INFO]  ==================================================
+03:17:21  [INFO]    Query: What is the battery warranty?
+03:17:21  [INFO]  ==================================================
+03:17:21  [INFO]  Stage 1: Running Query Planner Agent …
+03:17:23  [INFO]  HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+03:17:23  [INFO]    Plan determined: semantic=True, graph=True, both=True
+03:17:23  [INFO]  Stage 2: Initializing Semantic Retrieval Agent …
+03:17:25  [INFO]  No device provided, using cpu
+03:17:26  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+03:17:26  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+03:17:26  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+03:17:27  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+03:17:27  [INFO]  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+03:17:28  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+03:17:28  [WARNING]  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+03:17:28  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+03:17:29  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+03:17:29  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+03:17:29  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+03:17:29  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+03:17:36  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:36  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+03:17:36  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+03:17:36  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:36  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+03:17:37  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+03:17:37  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:17:38  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:17:38  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:17:38  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:38  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+03:17:40  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:41  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+03:17:41  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:41  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+03:17:41  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:41  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+03:17:42  [INFO]  HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+03:17:42  [INFO]  HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+03:17:43  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:43  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+03:17:43  [INFO]  HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+03:17:43  [INFO]    Loading cached FAISS index from output\faiss_index
+03:17:43  [INFO]  Loading faiss with AVX2 support.
+03:17:43  [INFO]  Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+03:17:43  [INFO]  Loading faiss.
+03:17:43  [INFO]  Successfully loaded faiss.
+03:17:43  [INFO]    Loaded 384 chunks for lookup
+03:17:43  [INFO]    FAISS index loaded from cache ✓
+03:17:43  [INFO]    Semantic Retrieval Agent: Searching (top_k=30) …
+03:17:43  [INFO]    Semantic Retrieval Agent: Retrieved 30 candidates ✓
+03:17:43  [INFO]  Connecting to Neo4j at neo4j+s://23aa2db5.databases.neo4j.io …
+03:17:45  [INFO]  Neo4j connection verified ✓
+03:17:45  [INFO]    Graph Retrieval Agent: running for 2 entities (depth=1, min_conf=0.7) …
+03:17:49  [INFO]      Matched 20 entities
+03:17:53  [INFO]  Stage 4: Running Fusion Agent …
+03:17:53  [INFO]    Semantic Candidates: 30, Graph Candidates: 14
+03:17:53  [INFO]    Fusion complete. Fused into 35 candidates.
+03:17:53  [INFO]    Loading re-ranker model: cross-encoder/ms-marco-MiniLM-L-6-v2 …
+03:17:53  [INFO]  No device provided, using cpu
+03:17:54  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+03:17:54  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 404 Not Found"
+03:17:54  [INFO]  No modules.json found for cross-encoder/ms-marco-MiniLM-L-6-v2, initializing a new CrossEncoder model.
+03:17:54  [INFO]  HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+03:17:55  [INFO]  HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+03:17:55  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:55  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:55  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+03:17:56  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/adapter_config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:56  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+03:17:57  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:57  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:57  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+03:17:57  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/processor_config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:58  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+03:17:58  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:59  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:17:59  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+03:17:59  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:18:00  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+03:18:00  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:18:01  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+03:18:01  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+03:18:01  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/tokenizer_config.json "HTTP/1.1 200 OK"
+03:18:02  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:18:02  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:18:02  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+03:18:02  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:18:03  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:18:04  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+03:18:04  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+03:18:05  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+03:18:05  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/tokenizer_config.json "HTTP/1.1 200 OK"
+03:18:05  [INFO]  HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+03:18:06  [INFO]  HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+03:18:09  [INFO]  HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+03:18:14  [INFO]  HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+03:18:14  [INFO]    Re-ranker model loaded ✓
+03:18:14  [INFO]  Stage 5: Running Re-ranking Agent (scoring 35 candidates) …
+03:18:18  [INFO]    Reranking complete. Top score: 2.6090, bottom score: -7.6548
+03:18:18  [INFO]  Stage 6: Running Evidence Agent …
+03:18:18  [INFO]    Evidence Agent: Compiled 26 chunks, 49 entities, 32 graph paths.
+03:18:18  [INFO]  Stage 7: Running Context Builder Agent …
+03:18:18  [INFO]    Context Builder Agent: Deduplicated 26 → 25 chunks.
+03:18:18  [INFO]    Context Builder Agent: Final context size: ~4002 tokens.
+03:18:18  [INFO]  
+03:18:18  [INFO]  ==================================================
+03:18:18  [INFO]    RETRIEVAL WORKFLOW COMPLETE
+03:18:18  [INFO]  ==================================================
+03:18:18  [INFO]    Query Planner Agent      :   1318.3 ms
+03:18:18  [INFO]    Semantic Retrieval Agent :  20318.2 ms
+03:18:18  [INFO]    Graph Retrieval Agent    :   9707.6 ms
+03:18:18  [INFO]    Fusion Agent             :      0.6 ms
+03:18:18  [INFO]    Re-ranking Agent         :  25219.5 ms
+03:18:18  [INFO]    Evidence Agent           :     10.0 ms
+03:18:18  [INFO]    Context Builder Agent    :     57.8 ms
+03:18:18  [INFO]    TOTAL                    :  56632.3 ms
+03:18:18  [INFO]  ==================================================
+03:18:18  [INFO]  
+03:18:18  [INFO]  ==================================================
+03:18:18  [INFO]    ANSWER SYNTHESIS LAYER
+03:18:18  [INFO]  ==================================================
+03:18:18  [INFO]  Step 1: Selecting Top 3 evidence chunks …
+03:18:18  [INFO]    Selected 3 primary chunks, 32 graph paths.
+03:18:18  [INFO]  Step 2: Consolidating evidence …
+03:18:18  [INFO]    Common facts: 0, Complementary facts: 15, Graph relationships: 32
+03:18:18  [INFO]  Step 3: Generating answer via LLM …
+03:18:19  [INFO]  HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+03:18:19  [INFO]    Answer generated in 1191.9 ms
+03:18:19  [INFO]  Step 4: Building evidence attribution …
+03:18:19  [INFO]  Step 5: Constructing reasoning path …
+03:18:19  [INFO]  Step 6: Computing confidence score …
+03:18:19  [INFO]    Confidence breakdown: relevance=0.436, relationship=0.955, agreement=0.418 → composite=0.561
+03:18:19  [INFO]  
+03:18:19  [INFO]  ==================================================
+03:18:19  [INFO]    SYNTHESIS COMPLETE
+03:18:19  [INFO]    Confidence: Medium
+03:18:19  [INFO]    Total synthesis time: 1203.3 ms
+03:18:19  [INFO]  ==================================================
+03:18:19  [INFO]  Neo4j connection closed
+03:19:33  [INFO]  Initializing Retrieval Pipeline and Answer Synthesis Chain...
+03:19:33  [INFO]  
+03:19:33  [INFO]  ==================================================
+03:19:33  [INFO]    AGENTIC RETRIEVAL PIPELINE
+03:19:33  [INFO]  ==================================================
+03:19:33  [INFO]    Query: What is the battery warranty?
+03:19:33  [INFO]  ==================================================
+03:19:33  [INFO]  Stage 1: Running Query Planner Agent …
+03:19:34  [INFO]  HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+03:19:34  [INFO]    Plan determined: semantic=True, graph=True, both=True
+03:19:34  [INFO]  Stage 2: Initializing Semantic Retrieval Agent …
+03:19:37  [INFO]  No device provided, using cpu
+03:19:38  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+03:19:38  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+03:19:39  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+03:19:39  [WARNING]  Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+03:19:39  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+03:19:39  [INFO]  Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+03:19:39  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+03:19:39  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+03:19:40  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+03:19:40  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+03:19:40  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+03:19:40  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+03:19:40  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+03:19:40  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+03:19:41  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+03:19:41  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:19:41  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+03:19:42  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+03:19:43  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:19:43  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:19:43  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:19:44  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+03:19:44  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+03:19:45  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:19:47  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+03:19:47  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:19:48  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+03:19:48  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+03:19:49  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+03:19:50  [INFO]  HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+03:19:50  [INFO]  HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+03:19:51  [INFO]  HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+03:19:51  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+03:19:51  [INFO]  HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+03:19:51  [INFO]    Loading cached FAISS index from output\faiss_index
+03:19:51  [INFO]  Loading faiss with AVX2 support.
+03:19:51  [INFO]  Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+03:19:51  [INFO]  Loading faiss.
+03:19:51  [INFO]  Successfully loaded faiss.
+03:19:51  [INFO]    Loaded 384 chunks for lookup
+03:19:51  [INFO]    FAISS index loaded from cache ✓
+03:19:51  [INFO]    Semantic Retrieval Agent: Searching (top_k=30) …
+03:19:53  [INFO]    Semantic Retrieval Agent: Retrieved 30 candidates ✓
+03:19:53  [INFO]  Connecting to Neo4j at neo4j+s://23aa2db5.databases.neo4j.io …
+03:19:58  [INFO]  Neo4j connection verified ✓
+03:19:58  [INFO]    Graph Retrieval Agent: running for 2 entities (depth=1, min_conf=0.7) …
+03:20:02  [INFO]      Matched 20 entities
+03:20:06  [INFO]  Stage 4: Running Fusion Agent …
+03:20:06  [INFO]    Semantic Candidates: 30, Graph Candidates: 14
+03:20:06  [INFO]    Fusion complete. Fused into 35 candidates.
+03:20:06  [INFO]    Loading re-ranker model: cross-encoder/ms-marco-MiniLM-L-6-v2 …
+03:20:06  [INFO]  No device provided, using cpu
+03:20:07  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+03:20:07  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 404 Not Found"
+03:20:07  [INFO]  No modules.json found for cross-encoder/ms-marco-MiniLM-L-6-v2, initializing a new CrossEncoder model.
+03:20:08  [INFO]  HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+03:20:09  [INFO]  HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+03:20:09  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:09  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:09  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+03:20:10  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/adapter_config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:10  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+03:20:10  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:11  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:11  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+03:20:12  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/processor_config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:12  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+03:20:13  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:14  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:20:14  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:15  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:20:15  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:15  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+03:20:16  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:16  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:16  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/tokenizer_config.json "HTTP/1.1 200 OK"
+03:20:17  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:17  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:18  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+03:20:18  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:18  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:18  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+03:20:19  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:19  [INFO]  HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+03:20:19  [INFO]  HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/tokenizer_config.json "HTTP/1.1 200 OK"
+03:20:20  [INFO]  HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+03:20:22  [INFO]  HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+03:20:23  [INFO]  HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+03:20:23  [INFO]  HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+03:20:23  [INFO]    Re-ranker model loaded ✓
+03:20:23  [INFO]  Stage 5: Running Re-ranking Agent (scoring 35 candidates) …
+03:20:35  [INFO]    Reranking complete. Top score: 2.6090, bottom score: -7.6548
+03:20:35  [INFO]  Stage 6: Running Evidence Agent …
+03:20:35  [INFO]    Evidence Agent: Compiled 26 chunks, 49 entities, 32 graph paths.
+03:20:35  [INFO]  Stage 7: Running Context Builder Agent …
+03:20:35  [INFO]    Context Builder Agent: Deduplicated 26 → 25 chunks.
+03:20:35  [INFO]    Context Builder Agent: Final context size: ~4002 tokens.
+03:20:35  [INFO]  
+03:20:35  [INFO]  ==================================================
+03:20:35  [INFO]    RETRIEVAL WORKFLOW COMPLETE
+03:20:35  [INFO]  ==================================================
+03:20:35  [INFO]    Query Planner Agent      :   1126.4 ms
+03:20:35  [INFO]    Semantic Retrieval Agent :  19162.0 ms
+03:20:35  [INFO]    Graph Retrieval Agent    :  13055.4 ms
+03:20:35  [INFO]    Fusion Agent             :      1.1 ms
+03:20:35  [INFO]    Re-ranking Agent         :  28541.1 ms
+03:20:35  [INFO]    Evidence Agent           :      8.7 ms
+03:20:35  [INFO]    Context Builder Agent    :     52.2 ms
+03:20:35  [INFO]    TOTAL                    :  61947.2 ms
+03:20:35  [INFO]  ==================================================
+03:20:35  [INFO]  
+03:20:35  [INFO]  ==================================================
+03:20:35  [INFO]    ANSWER SYNTHESIS LAYER
+03:20:35  [INFO]  ==================================================
+03:20:35  [INFO]  Step 1: Selecting Top 3 evidence chunks …
+03:20:35  [INFO]    Selected 3 primary chunks, 32 graph paths.
+03:20:35  [INFO]  Step 2: Consolidating evidence …
+03:20:35  [INFO]    Common facts: 0, Complementary facts: 15, Graph relationships: 32
+03:20:35  [INFO]  Step 3: Generating answer via LLM …
+03:20:36  [INFO]  HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+03:20:36  [INFO]    Answer generated in 1115.7 ms
+03:20:36  [INFO]  Step 4: Building evidence attribution …
+03:20:36  [INFO]  Step 5: Constructing reasoning path …
+03:20:36  [INFO]  Step 6: Computing confidence score …
+03:20:36  [INFO]    Confidence breakdown: relevance=0.436, relationship=0.955, agreement=0.418 → composite=0.561
+03:20:36  [INFO]  
+03:20:36  [INFO]  ==================================================
+03:20:36  [INFO]    SYNTHESIS COMPLETE
+03:20:36  [INFO]    Confidence: Medium
+03:20:36  [INFO]    Total synthesis time: 1125.6 ms
+03:20:36  [INFO]  ==================================================
+03:20:36  [INFO]  Neo4j connection closed
+03:20:36  [INFO]  ============================================================
+03:20:36  [INFO]    QUERY-TIME PIPELINE TIMINGS
+03:20:36  [INFO]  ============================================================
+03:20:36  [INFO]    Retrieval          :  33405.7 ms
+03:20:36  [INFO]    Re-ranking         :  28541.1 ms
+03:20:36  [INFO]    Answer Generation  :   1126.3 ms
+03:20:36  [INFO]    Total Query Process:  63075.9 ms
+03:20:36  [INFO]  ============================================================
