@@ -22,5 +22,6 @@ dependencies = [
     "pyvis>=0.3.2",
     "rank-bm25>=0.2.2",
     "sentence-transformers>=5.6.0",
+    "spacy>=3.8.14",
     "streamlit>=1.58.0",
 ]

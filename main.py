@@ -11,8 +11,10 @@ import logging
 import os
 import sys
 import time
+import shutil
 from pathlib import Path
 from dotenv import load_dotenv
+import subprocess
 
 # Reconfigure standard output streams to use UTF-8 encoding on Windows to prevent UnicodeEncodeErrors
 if hasattr(sys.stdout, "reconfigure"):
@@ -42,11 +44,7 @@ logger = logging.getLogger(__name__)
 # Imports from existing modules
 from parser.pdf_parser import PDFParser
 from processor.multimodal_processor import MultimodalProcessor
-from chunker.semantic_chunker import SemanticTextChunker
-from extractor.extractor import EntityExtractor
-from extractor.runner import save_entities
-from relationship.extractor import RelationshipExtractor
-from relationship.runner import save_relationships
+from semantic_chunker import SemanticTextChunker
 from graph_builder.connection import Neo4jConnection
 from graph_builder.ingestion import GraphIngestionService
 from graph_builder.validator import validate_inputs, validate_graph
@@ -55,14 +53,54 @@ from retriever.pipeline import RetrievalPipeline
 from synthesizer.synthesis_chain import AnswerSynthesisChain
 
 
+def clean_previous_run():
+    """Completely remove old outputs so every PDF starts from scratch."""
+    output_dir = Path("output")
+    if not output_dir.exists():
+        return
+        
+    files_to_delete = [
+        "chunks.json", 
+        "entities.json", 
+        "relationships.json", 
+        "entities_neo4j.json", 
+        "relationships_neo4j.json", 
+        ".graph_ingested", 
+        ".pinecone_ingested"
+    ]
+    for filename in files_to_delete:
+        file_path = output_dir / filename
+        if file_path.exists():
+            file_path.unlink()
+            logger.info(f"Deleted: {file_path}")
+            
+    images_dir = output_dir / "images"
+    if images_dir.exists():
+        shutil.rmtree(images_dir)
+        logger.info("Deleted images folder")
+        
+    faiss_dir = output_dir / "faiss_index"
+    if faiss_dir.exists():
+        shutil.rmtree(faiss_dir)
+        logger.info("Deleted FAISS index")
+        
+    for json_file in output_dir.glob("*_parsed.json"):
+        json_file.unlink()
+    for json_file in output_dir.glob("*_processed.json"):
+        json_file.unlink()
+        
+    logger.info("✓ Previous run cleaned successfully")
+
+
 def run_ingestion(pdf_path: str, force: bool = False) -> dict[str, float]:
     """Execute the Document Ingestion and Knowledge Construction pipeline with checkpointing and timing."""
+    clean_previous_run()
     timings = {}
     
     # Paths for artifacts and flags
     chunks_path = Path("output/chunks.json")
-    entities_path = Path("output/entities.json")
-    relationships_path = Path("output/relationships.json")
+    entities_path = Path("output/entities_neo4j.json")
+    relationships_path = Path("output/relationships_neo4j.json")
     graph_flag_path = Path("output/.graph_ingested")
     pinecone_flag_path = Path("output/.pinecone_ingested")
     
@@ -106,6 +144,9 @@ def run_ingestion(pdf_path: str, force: bool = False) -> dict[str, float]:
             image_chunks, next_id = chunker.build_image_chunks(data, next_id)
             
             all_chunks = text_chunks + table_chunks + image_chunks
+            if hasattr(chunker, "deduplicate_chunks"):
+                all_chunks = chunker.deduplicate_chunks(all_chunks)
+                
             chunker.save_chunks(all_chunks, str(chunks_path))
             
             t_chunk_end = time.perf_counter()
@@ -114,54 +155,19 @@ def run_ingestion(pdf_path: str, force: bool = False) -> dict[str, float]:
         except Exception as exc:
             logger.error(f"FATAL: Semantic Chunking stage failed: {exc}")
             raise exc
+        
+        
+        logger.info("Starting Graph Pipeline (run_graph.py)...")
+        subprocess.run(
+            [sys.executable, "run_graph.py"],
+            check=True
+        )
+        
+        logger.info("Graph Pipeline completed.")
+        
 
     # ── Step 4: Entity Extraction ──────────────────────────────────────────
-    if entities_path.exists() and not force:
-        logger.info(f"Checkpoint hit: '{entities_path}' already exists. Skipping Entity Extraction.")
-        timings["Entity Extraction"] = 0.0
-    else:
-        t_ent_start = time.perf_counter()
-        logger.info("Starting Entity Extraction...")
-        try:
-            with open(chunks_path, "r", encoding="utf-8") as f:
-                chunks = json.load(f)
-            
-            extractor = EntityExtractor()
-            result = extractor.extract_all(chunks)
-            save_entities(result, str(entities_path))
-            
-            t_ent_end = time.perf_counter()
-            timings["Entity Extraction"] = (t_ent_end - t_ent_start) * 1000
-            logger.info(f"Entity Extraction completed in {timings['Entity Extraction']:.1f} ms. Entities: {result.total_entities_extracted}.")
-        except Exception as exc:
-            logger.error(f"FATAL: Entity Extraction stage failed: {exc}")
-            raise exc
-
-    # ── Step 5: Relationship Extraction ────────────────────────────────────
-    if relationships_path.exists() and not force:
-        logger.info(f"Checkpoint hit: '{relationships_path}' already exists. Skipping Relationship Extraction.")
-        timings["Relationship Extraction"] = 0.0
-    else:
-        t_rel_start = time.perf_counter()
-        logger.info("Starting Relationship Extraction...")
-        try:
-            with open(chunks_path, "r", encoding="utf-8") as f:
-                chunks = json.load(f)
-            with open(entities_path, "r", encoding="utf-8") as f:
-                entities_data = json.load(f)
-            
-            entities = entities_data["entities"] if isinstance(entities_data, dict) and "entities" in entities_data else entities_data
-            
-            extractor = RelationshipExtractor()
-            result = extractor.extract_all(chunks, entities)
-            save_relationships(result, str(relationships_path))
-            
-            t_rel_end = time.perf_counter()
-            timings["Relationship Extraction"] = (t_rel_end - t_rel_start) * 1000
-            logger.info(f"Relationship Extraction completed in {timings['Relationship Extraction']:.1f} ms. Relationships: {result.total_relationships_extracted}.")
-        except Exception as exc:
-            logger.error(f"FATAL: Relationship Extraction stage failed: {exc}")
-            raise exc
+    
 
     # ── Step 6: Neo4j Graph Builder ────────────────────────────────────────
     if graph_flag_path.exists() and not force:
@@ -370,8 +376,8 @@ def main():
     
     parser.add_argument(
         "--pdf",
-        default="data/pdfs/sample.pdf",
-        help="Path to the PDF file for ingestion (default: data/pdfs/sample.pdf)"
+        default=None,
+        help="Path to the PDF file for ingestion (default: None)"
     )
     parser.add_argument(
         "--force",
@@ -398,7 +404,16 @@ def main():
         sys.exit(1)
 
     if args.ingest:
-        run_ingestion(args.pdf, force=args.force)
+        if args.pdf:
+            run_ingestion(args.pdf, force=args.force)
+        else:
+            pdf_folder = Path("data/pdfs")
+            pdf_files = list(pdf_folder.glob("*.pdf"))
+            if not pdf_files:
+                raise FileNotFoundError("No PDF found inside data/pdfs")
+            pdf_path = str(pdf_files[0])
+            logger.info(f"Using PDF: {pdf_path}")
+            run_ingestion(pdf_path, force=args.force)
         
     elif args.query:
         run_query(args.query, rerank_top_k=args.top_k, token_budget=args.token_budget)
