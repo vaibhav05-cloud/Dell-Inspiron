@@ -265,7 +265,7 @@ def run_query(query: str, rerank_top_k: int = 15, token_budget: int = 4000) -> N
     if missing_artifacts:
         logger.error(f"Query Pipeline cannot run. Ingestion artifacts/flags missing: {missing_artifacts}")
         logger.error("Please run the ingestion pipeline first with: python main.py --ingest")
-        sys.exit(1)
+        raise RuntimeError(f"Ingestion artifacts missing: {missing_artifacts}")
         
     logger.info("Initializing Retrieval Pipeline and Answer Synthesis Chain...")
     
@@ -280,7 +280,7 @@ def run_query(query: str, rerank_top_k: int = 15, token_budget: int = 4000) -> N
         synthesis_chain = AnswerSynthesisChain()
     except Exception as exc:
         logger.error(f"Failed to initialize query services: {exc}")
-        sys.exit(1)
+        raise RuntimeError(f"Failed to initialize query services: {exc}") from exc
 
     # ── Retrieval and Answer Synthesis ────────────────────────────────────
     t_query_start = time.perf_counter()
@@ -316,7 +316,7 @@ def run_query(query: str, rerank_top_k: int = 15, token_budget: int = 4000) -> N
     except Exception as exc:
         logger.error(f"Query Execution failed: {exc}")
         pipeline.close()
-        sys.exit(1)
+        raise RuntimeError(f"Query Execution failed: {exc}") from exc
         
     pipeline.close()
 
@@ -351,6 +351,7 @@ def run_query(query: str, rerank_top_k: int = 15, token_budget: int = 4000) -> N
     logger.info(f"  Answer Generation  : {answer_gen_ms:>8.1f} ms")
     logger.info(f"  Total Query Process: {total_query_ms:>8.1f} ms")
     logger.info("=" * 60)
+    return final_output
 
 
 def main():

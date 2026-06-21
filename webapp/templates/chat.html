@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Chat — Document GraphRAG{% endblock %}
+{% block content %}
+  <h1>💬 Chat</h1>
+  <p class="page-caption">Questions are answered strictly from the ingested document's scope.</p>
+
+  <div class="chat-window" id="chat-window">
+    <div class="chat-empty" id="chat-empty">No conversation yet. Ask something about the ingested document below.</div>
+  </div>
+
+  <form class="chat-input-row" id="chat-form">
+    <input type="text" id="chat-input" placeholder="Ask a question about the ingested document…" autocomplete="off" required />
+    <button type="submit" class="btn" id="chat-submit">Ask</button>
+  </form>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+<script>
+  initConnStatus();
+  initChatPage();
+</script>
+{% endblock %}

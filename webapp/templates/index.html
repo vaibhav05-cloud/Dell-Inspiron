@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Overview — Document GraphRAG{% endblock %}
+{% block content %}
+  <h1>🧭 Document GraphRAG</h1>
+  <p class="page-caption">Upload a PDF, ingest it into a vector + knowledge graph index, and ask scoped questions.</p>
+
+  <div class="card-grid">
+    <div>
+      <h3>Ingestion pipeline</h3>
+      <div class="flow-card">
+        PDF Manual → Parsing → <span class="card-mono-id">sample_parsed.json</span><br>
+        → Vision/Table Enrichment → <span class="card-mono-id">sample_processed.json</span><br>
+        → Semantic Chunking → <span class="card-mono-id">chunks.json</span><br>
+        → Entity Extraction → <span class="card-mono-id">entities.json</span><br>
+        → Relationship Extraction → <span class="card-mono-id">relationships.json</span><br>
+        → FAISS Index + Neo4j Graph
+      </div>
+    </div>
+    <div>
+      <h3>Query pipeline</h3>
+      <div class="flow-card">
+        User Query → Query Planner Agent<br>
+        → Semantic Retrieval (FAISS) + Graph Retrieval (Neo4j)<br>
+        → Fusion Agent → Re-ranking Agent → Evidence Agent<br>
+        → Context Builder Agent → Answer Synthesis<br>
+        → JSON Output <span class="card-mono-id">(in-scope or out-of-scope)</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <p>
+    Use the sidebar to <strong>upload a document</strong>, <strong>ask questions</strong>,
+    <strong>explore the knowledge graph</strong>, or view the <strong>pipeline dashboard</strong>.
+  </p>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  initConnStatus();
+</script>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Pipeline Dashboard — Document GraphRAG{% endblock %}
+{% block content %}
+  <h1>📊 Pipeline Dashboard</h1>
+
+  <div id="dash-empty" class="alert alert-info" hidden>
+    No document has finished ingesting yet — check the Upload &amp; Ingest page.
+  </div>
+
+  <div id="dash-content" hidden>
+    <h3 id="dash-filename"></h3>
+    <p class="page-caption" id="dash-ingested-at"></p>
+
+    <div class="metric-row">
+      <div class="metric"><div class="metric-label">Chunks</div><div class="metric-value" id="metric-chunks">0</div></div>
+      <div class="metric"><div class="metric-label">Entities</div><div class="metric-value" id="metric-entities">0</div></div>
+      <div class="metric"><div class="metric-label">Relationships</div><div class="metric-value" id="metric-relationships">0</div></div>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="card-grid">
+      <div>
+        <p style="font-weight:600;">Entities by type</p>
+        <div class="bar-list" id="entities-by-type"></div>
+      </div>
+      <div>
+        <p style="font-weight:600;">Relationships by type</p>
+        <div class="bar-list" id="relationships-by-type"></div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+    <p class="muted">
+      This pipeline processes one document corpus at a time — uploading a
+      new PDF on the Upload &amp; Ingest page replaces this document's chunks,
+      entities, relationships, and vector index.
+    </p>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+<script>
+  initConnStatus();
+  initDashboardPage();
+</script>
+{% endblock %}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Document GraphRAG{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <div class="app-shell">
+    <nav class="sidebar">
+      <div class="sidebar-brand"><span class="mark">🧭</span> Document GraphRAG</div>
+
+      <a class="nav-link {% if active == 'index' %}active{% endif %}" href="{{ url_for('index') }}">
+        <span class="nav-icon">🏠</span> Overview
+      </a>
+      <a class="nav-link {% if active == 'upload' %}active{% endif %}" href="{{ url_for('upload_page') }}">
+        <span class="nav-icon">📤</span> Upload &amp; Ingest
+      </a>
+      <a class="nav-link {% if active == 'chat' %}active{% endif %}" href="{{ url_for('chat_page') }}">
+        <span class="nav-icon">💬</span> Chat
+      </a>
+      <a class="nav-link {% if active == 'graph' %}active{% endif %}" href="{{ url_for('graph_page') }}">
+        <span class="nav-icon">🕸️</span> Graph Explorer
+      </a>
+      <a class="nav-link {% if active == 'dashboard' %}active{% endif %}" href="{{ url_for('dashboard_page') }}">
+        <span class="nav-icon">📊</span> Pipeline Dashboard
+      </a>
+
+      <div class="sidebar-footer">
+        Single-corpus pipeline — a new upload replaces the currently
+        ingested document.
+      </div>
+    </nav>
+
+    <main class="main">
+      <div id="conn-status-wrap">
+        <span id="conn-status-pill" class="pill pill-muted">checking backend…</span>
+      </div>
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/common.js') }}"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

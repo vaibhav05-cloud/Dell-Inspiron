@@ -245,3 +245,41 @@ The Answer Synthesis layer is now fully integrated into the unified query execut
 | **Medium** | 0.40 – 0.69 | Moderate evidence with some gaps |
 | **Low** | < 0.40 | Weak or conflicting evidence |
 
+## API Layer
+
+A FastAPI wrapper sits on top of the existing CLI pipeline (`main.py`), exposing it over HTTP.
+
+### Running the API
+```bash
+uv add fastapi uvicorn pydantic
+uv run uvicorn api.server:app --reload --port 8000
+```
+
+### Endpoints
+
+- `GET /health` — liveness check
+- `POST /query` — runs retrieval + answer synthesis for a question
+```json
+  { "query": "What is the battery warranty?" }
+```
+  Responses are cached in-memory per server session — repeated identical
+  queries return near-instantly instead of re-running the full pipeline
+  (~15-30s cold).
+
+- `POST /ingest` — accepts a PDF upload (`multipart/form-data`, field `file`)
+  and an optional `force` flag, then runs ingestion in the background.
+
+  ⚠️ **Known limitation:** ingestion checkpoints (`output/chunks.json` etc.)
+  are keyed by file existence, not document identity. Uploading a new PDF
+  is silently skipped unless `force=true` is set — and forcing it
+  overwrites/mixes with the existing knowledge base, since there's no
+  per-document separation yet. Needs a fix on the pipeline side for real
+  multi-PDF support.
+
+### Project structure (API)
+```
+api/
+├── server.py        # FastAPI app, CORS, router mounting
+├── models/           # pydantic request/response schemas, one file per endpoint
+└── routes/           # endpoint logic, one file per endpoint
+```

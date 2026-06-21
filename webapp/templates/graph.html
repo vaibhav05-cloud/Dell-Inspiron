@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Graph Explorer — Document GraphRAG{% endblock %}
+{% block head %}
+<link href="https://unpkg.com/vis-network@9.1.6/styles/vis-network.min.css" rel="stylesheet" />
+{% endblock %}
+{% block content %}
+  <h1>🕸️ Graph Explorer</h1>
+  <p class="page-caption">Entities and relationships extracted into Neo4j for the ingested document.</p>
+
+  <div id="graph-empty" class="alert alert-info" hidden>
+    No graph data yet — upload and ingest a PDF on the Upload &amp; Ingest page first.
+  </div>
+
+  <div id="graph-content" hidden>
+    <div class="metric-row">
+      <div class="metric"><div class="metric-label">Entities</div><div class="metric-value" id="metric-entities">0</div></div>
+      <div class="metric"><div class="metric-label">Relationships</div><div class="metric-value" id="metric-relationships">0</div></div>
+      <div class="metric"><div class="metric-label">Entity types</div><div class="metric-value" id="metric-types">0</div></div>
+    </div>
+
+    <div class="filter-row">
+      <input type="text" id="graph-filter" placeholder="Filter by entity name (leave empty to show everything)" />
+    </div>
+
+    <div id="graph-canvas"></div>
+
+    <p style="margin-top:14px; font-weight:600;">Legend</p>
+    <div class="legend" id="graph-legend"></div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://unpkg.com/vis-network@9.1.6/standalone/umd/vis-network.min.js"></script>
+<script src="{{ url_for('static', filename='js/graph.js') }}"></script>
+<script>
+  initConnStatus();
+  initGraphPage();
+</script>
+{% endblock %}

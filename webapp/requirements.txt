@@ -1,0 +1,10 @@
+# New dependencies for the Flask app. Your existing pipeline already
+# requires langchain, langchain-mistralai, pydantic, neo4j, sentence-
+# transformers, faiss-cpu, etc. (see your pyproject.toml) -- this file
+# only lists what's NEW for the web layer.
+
+flask>=3.0
+python-dotenv>=1.0
+
+# Optional, for production deployment instead of `python -m webapp.app`:
+# gunicorn>=21.2

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Upload &amp; Ingest — Document GraphRAG{% endblock %}
+{% block content %}
+  <h1>📤 Upload &amp; Ingest</h1>
+  <p class="page-caption">Ingesting a new PDF replaces the previously ingested document (single-corpus pipeline).</p>
+
+  <form id="upload-form">
+    <label for="pdf-file" id="dropzone" class="dropzone">
+      <div>Click to choose a PDF, or drag one here</div>
+      <div class="filename" id="dropzone-filename"></div>
+    </label>
+    <input type="file" id="pdf-file" name="file" accept="application/pdf" hidden />
+
+    <div style="margin-top:16px;">
+      <button type="submit" id="ingest-btn" class="btn" disabled>Ingest</button>
+    </div>
+  </form>
+
+  <div id="upload-alert"></div>
+
+  <hr class="divider" />
+
+  <div id="job-panel" hidden>
+    <h3 id="job-title"></h3>
+
+    <div class="stepper" id="stepper">
+      {% for key, label in stages %}
+      <div class="step" data-stage="{{ key }}">
+        <span class="marker pill pill-muted">○</span>
+        <div class="step-label">{{ label }}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0%;"></div></div>
+
+    <div id="job-status-alert"></div>
+
+    <details class="log-panel" id="log-panel" open>
+      <summary>Pipeline log</summary>
+      <div id="log-lines"></div>
+    </details>
+  </div>
+
+  <div id="no-job-msg" class="muted">Upload a PDF above to start ingestion.</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+<script>
+  initConnStatus();
+  initUploadPage();
+</script>
+{% endblock %}
