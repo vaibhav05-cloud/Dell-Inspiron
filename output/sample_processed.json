@@ -1,6 +1,6 @@
 {
   "file_name": "sample.pdf",
-  "file_path": "C:\\Codes\\Dell-Inspiron\\data\\pdfs\\sample.pdf",
+  "file_path": "E:\\Codes\\dell hackathon\\data\\pdfs\\sample.pdf",
   "total_pages": 160,
   "summary": {
     "text_blocks": 2701,
@@ -16864,7 +16864,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object, likely a screw or bolt, with a hexagonal head. The threading is visible along the shaft, and the head has six evenly spaced sides. The object appears to be made of a shiny, reflective material, possibly stainless steel or chrome-plated metal. The background is blurred, making it difficult to determine the exact context or setting."
+      "description": "The image shows a close-up of a small, metallic object with a threaded end, likely a screw or bolt. The object has a hexagonal head, indicating it is designed to be turned with a wrench or similar tool. The threading is fine and consistent, suggesting it is meant for precise or delicate applications. The surface appears smooth and reflective, with no visible damage or wear."
     },
     {
       "page_number": 2,
@@ -16886,7 +16886,7 @@
       "width": 35,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing triangle. The triangle is outlined in black with a thin border, and it appears to be centered against a plain background. There are no additional markings, labels, or details visible within or around the triangle."
+      "description": "The image shows a simple upward-pointing triangle. The triangle is solid black with no additional markings, labels, or internal details. It appears to be a basic geometric shape without any context or additional elements."
     },
     {
       "page_number": 11,
@@ -16897,7 +16897,7 @@
       "width": 55,
       "height": 46,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing arrow inside a triangle. The arrow appears to be pointing from the base of the triangle toward the apex, suggesting a direction or flow. The triangle has a thick black border, and the arrow is filled with a solid black color. The overall design is minimalistic and geometric."
+      "description": "The image shows a simple upward-pointing arrow inside a triangle. The arrow is black and centered within the triangle, which has a thin black outline. The triangle appears to be an equilateral shape, and the arrow suggests movement or direction. There are no other visible elements or text in the image."
     },
     {
       "page_number": 12,
@@ -16908,7 +16908,7 @@
       "width": 55,
       "height": 46,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing arrow enclosed in a triangle. The arrow is black, and the triangle is outlined in black with a white interior. The arrow appears to be pointing straight up, suggesting a direction or increase. There are no other visible elements or details in the image."
+      "description": "The image shows a simple upward-pointing arrow inside a triangle. The arrow is black and centered within the triangle, which has a white background. The overall shape suggests a directional or flow symbol, often used to indicate movement or progress."
     },
     {
       "page_number": 13,
@@ -16919,7 +16919,7 @@
       "width": 55,
       "height": 46,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing arrow inside a triangle. The arrow is black and the triangle is outlined in black with a white fill. The arrow appears to be pointing straight up from the base of the triangle to the top vertex."
+      "description": "The image shows a simple upward-pointing arrow inside a triangle. The arrow is black and centered within the triangle, which has a black outline. The triangle itself is filled with a light gray color. The overall design suggests a directional indicator or symbol, possibly representing growth, progress, or an upward trend."
     },
     {
       "page_number": 14,
@@ -16930,7 +16930,7 @@
       "width": 55,
       "height": 46,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing arrow inside a triangle. The arrow is black and the triangle is outlined in black with a white fill. The arrow appears to be pointing from the base of the triangle toward the top vertex."
+      "description": "The image shows a simple upward-pointing arrow inside a triangle. The arrow is black and centered within the triangle, which has a thin black outline. The triangle itself is filled with a light gray color. The overall design suggests a directional indicator or a symbol for growth or progress."
     },
     {
       "page_number": 15,
@@ -16941,7 +16941,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right, enclosed in a square border. The arrow is centered within the square and is the only visible element in the image. There are no additional details, labels, or context provided."
+      "description": "The image shows a simple, black arrow pointing to the right. The arrow is enclosed within a square border. The arrow and border are the only visible elements in the image. There are no additional details, labels, or context provided."
     },
     {
       "page_number": 16,
@@ -16952,7 +16952,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, and the entire figure appears to be a basic directional symbol or icon. There are no additional details, labels, or complex elements visible in the image."
+      "description": "The image shows a simple black arrow pointing to the right, enclosed in a black square border. The arrow is centered within the square and points horizontally to the right side of the image. There are no additional elements, labels, or indicators visible in the image."
     },
     {
       "page_number": 16,
@@ -16963,7 +16963,7 @@
       "width": 35,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing triangle. It is an equilateral triangle with three equal sides and three equal angles. The triangle is outlined in black with a transparent fill. There are no additional markings, labels, or details visible."
+      "description": "The image shows a simple upward-pointing triangle. The triangle is solid black with no additional markings, labels, or internal details. It appears to be a basic geometric shape without any context or additional elements."
     },
     {
       "page_number": 20,
@@ -16974,7 +16974,7 @@
       "width": 538,
       "height": 573,
       "block_type": "image",
-      "description": "The image shows a Dell laptop with a closed lid. The laptop has a silver body and a black keyboard. The Dell logo is visible on the bottom of the screen. The laptop is placed on a white surface."
+      "description": "The image shows a Dell laptop with a closed lid. The laptop has a silver-colored body and a black keyboard. The Dell logo is visible on the top center of the lid. The screen is not visible as the laptop is closed."
     },
     {
       "page_number": 21,
@@ -16985,7 +16985,7 @@
       "width": 600,
       "height": 452,
       "block_type": "image",
-      "description": "The image shows a stylized illustration of a laptop with several icons and arrows pointing towards it. The icons represent different concepts such as settings, a clock, a battery, a cloud, a lock, and a Wi-Fi signal. The arrows suggest that these concepts are connected or directed towards the laptop, implying themes like security, connectivity, time management, power management, and cloud services. The overall concept appears to emphasize the integration of various functionalities or considerations related to using a laptop."
+      "description": "The image shows a close-up view of a computer screen displaying the Dell logo. Above the logo, there are three icons connected by arrows pointing downward toward the logo. The icons appear to represent different functions: a lock symbol, a gear or settings symbol, and a downward arrow. The arrows suggest that these functions are being applied or directed toward the Dell logo. The background is blurred, emphasizing the screen and its elements."
     },
     {
       "page_number": 22,
@@ -17007,7 +17007,7 @@
       "width": 600,
       "height": 358,
       "block_type": "image",
-      "description": "The image shows a white Apple Magic Keyboard with a built-in trackpad. The keyboard has a row of function keys at the top, including media control keys and a power button on the right side. The trackpad is centrally located below the keyboard and features a black border. The overall design is sleek and minimalist, typical of Apple's product aesthetics."
+      "description": "The image shows a white Apple Magic Keyboard with a built-in trackpad. The keyboard has a row of function keys at the top, including media control keys. The trackpad is centrally located below the keyboard and is bordered by a white frame. The overall design is sleek and minimalist, typical of Apple products."
     },
     {
       "page_number": 23,
@@ -17018,7 +17018,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, creating a minimalistic and straightforward visual. There are no additional elements, labels, or details visible in the image."
+      "description": "The image shows a simple black and white icon of a right-facing arrow enclosed within a square border. The arrow is centered within the square and points to the right, suggesting movement or progression. The design is minimalist, with no additional text or complex elements."
     },
     {
       "page_number": 23,
@@ -17029,7 +17029,7 @@
       "width": 563,
       "height": 303,
       "block_type": "image",
-      "description": "The image shows a rectangular electronic device with a flat, elongated shape and rounded edges. It has a metallic top surface with visible seams or lines running along its length, suggesting a sleek, modern design. On one end, there are two small circular components, possibly connectors or indicators, and on the opposite end, a small rectangular protrusion, which might be a port or button. The device appears to be a piece of consumer electronics, such as a portable speaker or media player."
+      "description": "The image shows a rectangular electronic device with a flat, elongated shape and rounded edges. It has a small circular component on one end, possibly a sensor or connector, and a rectangular opening on the opposite side. The device appears to be a single, solid unit without visible internal components or additional features. The overall design suggests it may be a specialized piece of equipment, such as a sensor module or a small electronic instrument."
     },
     {
       "page_number": 24,
@@ -17040,7 +17040,7 @@
       "width": 427,
       "height": 328,
       "block_type": "image",
-      "description": "The image shows a pair of black-framed glasses with orange arms and nose pads. The glasses are placed on top of a smartphone, which is lying on a white surface. The phone screen is visible and appears to be displaying content, though the specific details on the screen are not clear. The glasses have a modern, minimalist design with round lenses and a thin frame."
+      "description": "The image shows a pair of black-framed glasses with orange arms and nose pads. The glasses are positioned on top of a smartphone, which is lying flat on a surface. The glasses have a modern, minimalist design with a sleek black frame and bright orange accents on the arms and nose pads. The smartphone underneath has a visible home button at the bottom center of its screen."
     },
     {
       "page_number": 24,
@@ -17051,7 +17051,7 @@
       "width": 563,
       "height": 258,
       "block_type": "image",
-      "description": "The image shows a pair of silver scissors with a sleek, modern design. The blades are long and taper to a sharp point, while the handle has a textured grip for better control. The pivot point where the blades meet is clearly visible, and the overall construction appears sturdy and well-crafted. The scissors are displayed against a plain white background, emphasizing their design and details."
+      "description": "The image shows a pair of silver hair clippers with a black blade. The clippers have a sleek, modern design with a flat, rectangular body and a slightly curved handle. The blade is detachable and positioned at the front of the device. There are control buttons visible on the body of the clippers, likely for adjusting speed or power settings."
     },
     {
       "page_number": 25,
@@ -17062,7 +17062,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical part, possibly a gear or a component from a small device. It has a cylindrical shape with a threaded section and a hexagonal head, suggesting it could be a screw or bolt. The surface has a slight sheen, indicating it may be made of metal like steel or aluminum. The background is plain and white, which helps to highlight the object's details."
+      "description": "The image shows a close-up of a small, metallic object, likely a screw or bolt, placed on a flat surface. The object has a hexagonal head and threading along its shaft, typical of fasteners used in mechanical assemblies. The lighting creates slight reflections on the metal surface, highlighting its texture and shape. No additional context or background is visible in the image."
     },
     {
       "page_number": 25,
@@ -17073,7 +17073,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, creating a minimalist directional symbol. The design is clean and straightforward, with no additional elements or details visible."
+      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, and the entire figure is set against a white background. There are no additional details, labels, or components visible in the image."
     },
     {
       "page_number": 25,
@@ -17084,7 +17084,7 @@
       "width": 35,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing arrow inside a triangle. The arrow is black and centered within the triangle, which is also black. The triangle has a white background. The overall design suggests a directional indicator or a symbol representing growth or progress."
+      "description": "The image shows a simple upward-pointing triangle. It appears to be a basic geometric shape with three equal sides and three equal angles. There are no additional elements, labels, or details visible in the image."
     },
     {
       "page_number": 25,
@@ -17095,7 +17095,7 @@
       "width": 570,
       "height": 484,
       "block_type": "image",
-      "description": "The image shows a transparent, three-dimensional model of a modern, sleek car. The car is depicted without any color or texture details, highlighting its smooth, aerodynamic shape. The wheels are visible, and the car appears to be floating slightly above the ground, giving it a futuristic look. The overall design suggests a concept car or a digital rendering rather than a real vehicle."
+      "description": "The image shows a transparent, three-dimensional model of a modern, angular building. The structure has a sleek, futuristic design with sharp edges and a flat roof. The model is placed on a reflective surface, and there is a small orange object, possibly a pencil or marker, positioned near the base of the model. The overall appearance suggests it could be an architectural concept or a design prototype."
     },
     {
       "page_number": 26,
@@ -17106,7 +17106,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, dark-colored insect with a segmented body and visible antennae. It appears to be a beetle or similar arthropod, positioned on a light-colored surface. The insect's legs and body segments are clearly visible, but no additional details or context about its environment are discernible."
+      "description": "The image shows a close-up of a small, metallic object with a hexagonal head, likely a screw or bolt. The threads are clearly visible, and the object appears to be resting on a flat surface. The lighting highlights the texture and shape of the object, but no additional context or background details are discernible."
     },
     {
       "page_number": 26,
@@ -17117,7 +17117,7 @@
       "width": 35,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing triangle. The triangle is black and appears to be an equilateral shape with three equal sides. There are no additional elements, labels, or details visible in the image."
+      "description": "The image shows a simple upward-pointing triangle. The triangle is solid black with no additional markings, labels, or internal details. It appears to be a basic geometric shape without any context or additional elements."
     },
     {
       "page_number": 26,
@@ -17128,7 +17128,7 @@
       "width": 638,
       "height": 132,
       "block_type": "image",
-      "description": "The image shows a silver-colored electronic device with multiple ports and indicators on its front panel. It has a rectangular shape with rounded edges and appears to be a network device, such as a router or switch, based on the presence of Ethernet ports, indicator lights, and a power button. The device has several ports labeled with icons that likely represent network connections, USB, or other interfaces. There is also a small screen or display area near the center."
+      "description": "The image shows a silver rectangular device with multiple ports and indicators on the front panel. It appears to be a network device, such as a router or switch, featuring several Ethernet ports, a power port, and status lights. The device has a sleek, modern design with a flat top and angled front edges. There are no visible labels or text that can be read clearly in the image."
     },
     {
       "page_number": 27,
@@ -17139,7 +17139,7 @@
       "width": 35,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing triangle. The triangle is outlined in black with a solid fill, creating a clear geometric shape. There are no additional elements, labels, or markings visible within or around the triangle."
+      "description": "The image shows a simple upward-pointing triangle. The triangle is outlined in black with a solid black fill. It appears to be a basic geometric shape without any additional markings or context."
     },
     {
       "page_number": 27,
@@ -17150,7 +17150,7 @@
       "width": 600,
       "height": 461,
       "block_type": "image",
-      "description": "The image shows a Dell laptop connected to a docking station. The docking station has multiple ports, including USB and Ethernet connections, and is connected to the laptop via a cable. The laptop screen displays the Dell logo. The setup appears to be designed to expand the laptop's connectivity options by providing additional ports and connections."
+      "description": "The image shows a portable DVD player with a blank screen, accompanied by a power adapter and a wired remote control. The DVD player is placed on top of its rectangular case, which has a handle on one side. The power adapter is connected to the DVD player via a cable, and the remote control is also connected with a wire. The setup appears to be designed for portable use, likely for watching DVDs on the go."
     },
     {
       "page_number": 27,
@@ -17161,7 +17161,7 @@
       "width": 31,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right, enclosed in a black square border. The arrow is centered within the square and points horizontally toward the right side of the image. There are no additional details, labels, or markings visible in the image."
+      "description": "The image shows a simple black arrow pointing to the right, enclosed in a black square border. The arrow is centered within the square and is the only visible element in the image. There are no additional details, labels, or context provided."
     },
     {
       "page_number": 28,
@@ -17172,7 +17172,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right, enclosed in a square border. The arrow is centered within the square and is the only visible element in the image. There are no additional details, labels, or context provided."
+      "description": "The image shows a simple black arrow pointing to the right, enclosed in a black square border. The arrow is centered within the square and points horizontally toward the right side of the image. There are no additional elements, labels, or details visible in the image."
     },
     {
       "page_number": 29,
@@ -17183,7 +17183,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic, rectangular component with two visible prongs or leads extending from one end. The surface appears smooth and reflective, suggesting it could be part of an electronic or mechanical assembly. The prongs are evenly spaced and slightly bent, indicating it may be designed to fit into a socket or connector. The overall shape resembles a transistor or a similar electronic component."
+      "description": "The image shows a close-up of a small, metallic object with a hexagonal head, likely a screw or bolt. The threads are visible and appear to be fine-pitched. The object is placed on a flat surface, possibly a piece of paper or a table. The lighting casts a shadow beneath the object, indicating it is raised slightly above the surface."
     },
     {
       "page_number": 29,
@@ -17194,7 +17194,7 @@
       "width": 35,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing arrowhead shape, resembling a basic triangle or arrowhead. It is a solid black outline with no additional details, shading, or context. The figure is symmetrical and points directly upward, with no other visible elements or features."
+      "description": "The image shows a simple upward-pointing triangle. The triangle is black and appears to be an equilateral shape with three equal sides. There are no additional elements, labels, or details visible in the image."
     },
     {
       "page_number": 29,
@@ -17205,7 +17205,7 @@
       "width": 562,
       "height": 469,
       "block_type": "image",
-      "description": "The image shows a floor plan of a small residential space. It includes a living area, a kitchen, a bedroom, and a bathroom. The layout features doors, windows, and furniture such as a sofa, bed, and dining table. The walls, doors, and fixtures are clearly outlined, providing a clear view of the room arrangement and dimensions."
+      "description": "The image shows a technical diagram of a mechanical component, likely a part of an engine or machinery, with various internal features such as chambers, passages, and mounting points. The diagram appears to be a cross-sectional view, revealing the internal structure and how different parts fit together. There are symmetrical elements on either side, suggesting a balanced design, and a central feature that looks like a shaft or spindle. The diagram includes dotted lines indicating hidden or internal edges, providing a clear view of the component's layout."
     },
     {
       "page_number": 32,
@@ -17216,7 +17216,7 @@
       "width": 16,
       "height": 16,
       "block_type": "image",
-      "description": "The image shows a small, blurry, square-shaped object with a pattern of light and dark spots. It appears to be a low-resolution or pixelated view of a textured surface, possibly a fabric or a close-up of a printed material. The details are too indistinct to determine any specific features or context."
+      "description": "The image shows a close-up of a woven fabric texture, likely a textile or cloth. The pattern consists of interlacing threads forming a tight, uniform weave with a subtle diagonal ribbing visible. The fabric appears to be a solid color, possibly beige or light brown, with no distinct designs or markings. The texture suggests it could be a piece of clothing, upholstery, or a similar material."
     },
     {
       "page_number": 33,
@@ -17227,7 +17227,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object with a threaded end, likely a screw or bolt. The object has a hexagonal head, indicating it is designed to be turned with a wrench or socket. The threading appears fine and precise, suggesting it is meant for a specific mechanical application. The background is plain and unobtrusive, keeping the focus on the object itself."
+      "description": "The image appears to be a black-and-white photograph of a person standing outdoors. The individual is wearing a long coat and a hat, and their face is blurred, making it difficult to identify any specific details. The background is indistinct, but it seems to be a natural setting with some trees or foliage visible. The overall tone of the image is somewhat grainy, suggesting it may be an older or low-resolution photo."
     },
     {
       "page_number": 33,
@@ -17238,7 +17238,7 @@
       "width": 16,
       "height": 16,
       "block_type": "image",
-      "description": "The image shows a small, blurry, and pixelated section of a document. It appears to contain a partial view of a table or chart with faint grid lines and some text or numbers, but the details are too unclear to identify specific content or trends. The overall quality makes it difficult to discern any meaningful information from the visible portion."
+      "description": "The image shows a close-up view of a textured, woven fabric with a repeating geometric pattern. The fabric appears to be a light beige or off-white color with darker brown or black lines forming the design. The pattern consists of interconnected shapes, possibly diamonds or triangles, arranged in a symmetrical layout. The texture of the fabric suggests it could be a type of linen or cotton material."
     },
     {
       "page_number": 34,
@@ -17249,7 +17249,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a watch mechanism. It has a cylindrical shape with a threaded section and a hexagonal head, suggesting it is designed to be screwed into place. The object is resting on a flat surface, and its details are slightly blurred, making it difficult to discern finer features."
+      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a watch mechanism. It has a cylindrical shape with a threaded section and a hexagonal head, suggesting it could be a screw or bolt. The object is resting on a flat surface, and there is a slight shadow cast beneath it, indicating a light source from above. The details are intricate, with fine machining marks visible on the surface."
     },
     {
       "page_number": 35,
@@ -17260,7 +17260,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object with a hexagonal head and threading, resembling a bolt or screw. The object appears to be placed on a flat surface, possibly for display or measurement. The background is plain and uncluttered, allowing the object to be the focal point. No additional details or context are visible in the image."
+      "description": "The image appears to be a black-and-white diagram or schematic. It shows a series of interconnected rectangular blocks arranged in a linear sequence, with lines or arrows connecting them, suggesting a flow or process. The blocks vary slightly in size and shape, and the connections between them indicate a step-by-step progression or relationship. The overall structure resembles a flowchart or a block diagram, likely representing a system, process, or conceptual model."
     },
     {
       "page_number": 35,
@@ -17271,7 +17271,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, creating a straightforward directional symbol. There are no additional elements, labels, or context visible in the image."
+      "description": "The image shows a black arrow inside a black square, pointing to the right. The arrow is centered within the square and is the only visible element in the image. There are no additional details, labels, or context provided."
     },
     {
       "page_number": 37,
@@ -17293,7 +17293,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a single, small, light-colored object resting on a dark, textured surface. The object appears to be roughly oval or teardrop-shaped with a slightly irregular outline. It has a smooth, possibly polished surface with subtle reflections. The background is out of focus, making it difficult to determine the exact nature of the surface or the object's context."
+      "description": "The image shows a close-up view of a small, metallic object that appears to be a mechanical part, possibly a gear or a wheel with teeth. The object has a central hole and several evenly spaced protrusions around its edge, suggesting it could be part of a gear system or a similar mechanism. The surface has a slightly worn or textured appearance, indicating it may have been used or handled. The background is blurred, keeping the focus entirely on the object."
     },
     {
       "page_number": 39,
@@ -17304,7 +17304,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right, enclosed in a black square border. The arrow is centered within the square and points horizontally toward the right side of the image. There are no additional details, labels, or context provided in the image."
+      "description": "The image shows a simple black arrow pointing to the right, enclosed in a black square border. The arrow is centered within the square and is pointing horizontally to the right side of the image. There are no additional details, labels, or other elements visible in the image."
     },
     {
       "page_number": 40,
@@ -17315,7 +17315,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object with a hexagonal head, likely a screw or bolt. The threading is visible along the shaft, and the head has distinct, evenly spaced indentations typical of a Phillips drive type. The object appears to be placed on a flat surface, possibly a table or workbench. The lighting casts subtle shadows, highlighting the texture and edges of the metal."
+      "description": "The image shows a close-up of a small, dark-colored insect with a segmented body and six legs, likely an ant or similar arthropod. It appears to be standing on a light-colored surface, possibly a leaf or paper. The background is blurred, making it difficult to discern additional details. The insect's body is elongated with a narrow waist, typical of ants."
     },
     {
       "page_number": 40,
@@ -17326,7 +17326,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right inside a circular outline. The arrow is centered within the circle, and the entire figure appears to be a basic directional symbol or icon. There are no additional details, labels, or complex components visible in the image."
+      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, creating a minimalist directional symbol. There are no additional elements, labels, or complex details visible in the image."
     },
     {
       "page_number": 40,
@@ -17337,7 +17337,7 @@
       "width": 27,
       "height": 26,
       "block_type": "image",
-      "description": "The image appears to be a black-and-white photograph of a person standing outdoors. The individual is wearing a long coat and a hat, and they are facing away from the camera, looking toward a blurred background that suggests an urban or natural setting. The lighting is soft, indicating either early morning or late afternoon. No other distinct objects or details are clearly visible in the image."
+      "description": "The image appears to be a black-and-white line graph with two plotted lines. The horizontal axis (x-axis) is labeled with numerical values increasing from left to right, while the vertical axis (y-axis) is labeled with numerical values increasing from bottom to top. One line shows a generally increasing trend, while the other line fluctuates but remains relatively stable. The graph likely represents a comparison between two sets of data over the same range of values on the x-axis."
     },
     {
       "page_number": 42,
@@ -17348,7 +17348,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object with a threaded end, likely a screw or bolt. The object has a hexagonal head, indicating it is designed to be turned with a wrench or socket. The threading appears fine and precise, suggesting it is meant for a specific mechanical application. The background is plain and unobtrusive, allowing the object to stand out clearly."
+      "description": "The image shows a close-up of a small, metallic object, likely a screw or bolt, placed on a flat surface. The object has a hexagonal head and threading along its shaft. The background appears to be a plain, light-colored material, possibly paper or cardboard. The lighting highlights the object's texture and metallic sheen."
     },
     {
       "page_number": 42,
@@ -17359,7 +17359,7 @@
       "width": 35,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black triangle with a white background. The triangle appears to be equilateral, with all sides and angles equal. There are no additional markings, labels, or components visible in the image."
+      "description": "The image shows a simple upward-pointing triangle. The triangle is black and appears to be an equilateral triangle, with all sides equal in length and all angles equal. There are no additional elements, labels, or markings visible within or around the triangle."
     },
     {
       "page_number": 43,
@@ -17370,7 +17370,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, rectangular electronic component with two visible metal prongs or leads extending from one end. The component appears to be a resistor or a similar passive electronic part, commonly used in circuits. The surface of the component has a colored band pattern, which typically indicates its resistance value, but the specific colors are not clearly discernible in this view. The leads are bent slightly outward, suggesting it may have been inserted into a circuit board or breadboard."
+      "description": "The image shows a close-up of a small, metallic object with a threaded end, likely a screw or bolt. The object has a hexagonal head, indicating it is designed to be turned with a wrench or socket. The threads are fine and uniform, suggesting it is meant for precise or secure fastening. The surface appears smooth and reflective, with no visible damage or wear."
     },
     {
       "page_number": 43,
@@ -17381,7 +17381,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, creating a minimalist design often used as a symbol for play, forward movement, or progression. There are no additional details, labels, or complex components visible in the image."
+      "description": "The image shows a simple, black arrow pointing to the right. The arrow is enclosed within a square border. There are no additional details, labels, or context visible in the image."
     },
     {
       "page_number": 43,
@@ -17392,7 +17392,7 @@
       "width": 21,
       "height": 32,
       "block_type": "image",
-      "description": "The image shows a small, blurry red dot on a green background. There are no visible labels, axes, or additional elements that would indicate a chart, graph, or diagram. It appears to be a simple visual element, possibly a decorative or placeholder graphic. No meaningful details about trends, components, or subjects can be discerned from the image."
+      "description": "The image shows a small, blurry red dot against a green background. The dot appears to be centered and is the only visible element in the image. There are no other discernible shapes, text, or details. The overall appearance suggests it may be a simple graphic or icon rather than a detailed chart, diagram, or photo."
     },
     {
       "page_number": 43,
@@ -17403,7 +17403,7 @@
       "width": 34,
       "height": 34,
       "block_type": "image",
-      "description": "The image appears to be a small, blurry section of a document, possibly a table or chart. It shows a few rows of text with some numbers and symbols, but the details are not clear enough to determine the exact content or context. The visible elements suggest it could be financial data or a similar structured format, but no specific chart type, axes, or trends can be confidently identified."
+      "description": "The image shows a small, blurry section of a document with text and a partial table or chart. The text appears to be in a serif font, and the table or chart includes some numerical data, though the exact values and labels are not clearly readable. The layout suggests it may be part of a financial or statistical report, but specific details cannot be discerned from the image."
     },
     {
       "page_number": 44,
@@ -17414,7 +17414,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object with a threaded end, likely a screw or bolt. The object has a hexagonal head, indicating it is designed to be turned with a wrench or socket. The threads are fine and appear to be uniform, suggesting it is meant for precise mechanical applications. The background is plain and white, providing no additional context."
+      "description": "The image shows a close-up of a small, metallic, rectangular object with rounded edges. It appears to be a component, possibly an electronic part such as a connector or a sensor, with two visible prongs or pins extending from one end. The surface has a smooth, polished finish, and there are no visible markings or text on it. The object is placed on a flat surface, likely for display or examination."
     },
     {
       "page_number": 44,
@@ -17425,7 +17425,7 @@
       "width": 35,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing triangle. The triangle is outlined in black with a thin black border. There are no additional details, labels, or markings inside or around the triangle."
+      "description": "The image shows a simple upward-pointing black triangle. The triangle is solid and has no additional markings, labels, or subdivisions. It appears to be a basic geometric shape without any context or further details."
     },
     {
       "page_number": 44,
@@ -17436,7 +17436,7 @@
       "width": 515,
       "height": 450,
       "block_type": "image",
-      "description": "The image shows a white air purifier with a digital display on the top right corner. The display appears to show a fan speed setting with an orange indicator pointing to a specific speed level. On the left side of the unit, there is a removable panel or filter cover. The air purifier has a sleek, modern design with a mesh or vent on the front for air intake."
+      "description": "The image shows a white air purifier with a fan-like design on the top and a control panel on the right side. The front panel appears to be partially open or removable, revealing internal components. There is an orange arrow pointing to the left side of the device, possibly indicating an airflow direction or a feature on that side. The air purifier has a sleek, modern appearance with a mesh-like cover on the top."
     },
     {
       "page_number": 45,
@@ -17447,7 +17447,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object, likely a screw or bolt, with a hexagonal head. The threads are clearly visible, and the object appears to be made of a shiny, reflective material, possibly stainless steel or chrome. There are no other objects or background details visible in the image."
+      "description": "The image shows a close-up view of a small, metallic object with a threaded end, likely a screw or bolt. The threading is clearly visible, and the object appears to have a hexagonal head, suggesting it is designed to be turned with a wrench or similar tool. The surface has a slightly reflective, silver-colored finish. The background is blurred, keeping the focus entirely on the object itself."
     },
     {
       "page_number": 48,
@@ -17458,7 +17458,7 @@
       "width": 600,
       "height": 416,
       "block_type": "image",
-      "description": "The image shows two Dell computer keyboards, each with an orange arrow pointing to a specific key. The key highlighted on both keyboards is the \"Delete\" key, which is located in the top-right section of the keyboard. The keyboards appear to be standard Dell models, with the usual layout of alphanumeric keys, function keys, and navigation keys. The arrows draw attention to the \"Delete\" key, suggesting its importance in the context of the image."
+      "description": "The image shows two computer keyboards, one on top of the other. Both keyboards have keys arranged in a standard QWERTY layout. There are two orange arrows pointing to the keyboards, one on the top keyboard and one on the bottom keyboard, indicating a comparison or highlighting a feature. The top keyboard appears to be a standard full-sized keyboard, while the bottom one is a compact keyboard with fewer keys and a smaller design."
     },
     {
       "page_number": 51,
@@ -17469,7 +17469,7 @@
       "width": 525,
       "height": 416,
       "block_type": "image",
-      "description": "The image shows a stylized illustration of a smartphone with a paper airplane emerging from its screen. The phone is depicted in a light blue color with a white screen, and the paper airplane is in a contrasting orange shade. The background is a gradient of light purple, giving the image a clean and modern look. The overall design suggests a theme of digital communication or sharing."
+      "description": "The image shows a stylized illustration of a smartphone with a paper airplane emerging from its screen, suggesting the concept of sending or sharing digital content. The phone is depicted in a minimalist, flat design style with a blue frame and a white screen. The background is a gradient of light purple fading to white, giving a clean and modern look. The paper airplane is orange and appears to be flying out of the phone, reinforcing the idea of digital communication or file sharing."
     },
     {
       "page_number": 53,
@@ -17480,7 +17480,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a watch mechanism. The object has a circular shape with a central hole and several small protrusions around its edge. The surface has a slightly reflective, polished finish, suggesting it may be made of metal or a similar material. The background is blurred, keeping the focus entirely on the component."
+      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a watch mechanism. It has a cylindrical shape with a threaded end and a hexagonal head, suggesting it is designed to be screwed into place. The object is resting on a flat surface, and its surface has a slightly reflective, silvery finish."
     },
     {
       "page_number": 56,
@@ -17491,7 +17491,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, rectangular object with a smooth, metallic surface. It appears to be a piece of electronic hardware, possibly a component like a sensor or a chip, with a visible connection point or terminal on one side. The object is placed on a flat surface, and there is a faint reflection of light on its top edge. No additional details or labels are discernible."
+      "description": "The image shows a close-up view of a small, metallic object that appears to be a mechanical part, possibly a gear or a component from a small device. The object has a cylindrical shape with a threaded section and a hexagonal head, suggesting it could be a screw or bolt. The surface has a slightly worn or textured appearance, indicating it may have been used or handled frequently. The background is blurred, making it difficult to determine the exact context or environment in which the object is placed."
     },
     {
       "page_number": 57,
@@ -17502,7 +17502,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, rectangular electronic component with two metal prongs extending from one end. The component appears to be a resistor or capacitor, commonly used in electronic circuits. The prongs are designed for insertion into a circuit board or breadboard. The body of the component is cylindrical and has colored bands, which typically indicate its resistance value or other specifications."
+      "description": "The image shows a close-up of a small, metallic object with a threaded end, likely a screw or bolt. The object has a hexagonal head, indicating it is designed to be turned with a wrench or socket. The threads appear fine and precise, suggesting it is meant for securing materials together in a mechanical or construction context. The background is plain and white, providing no additional context."
     },
     {
       "page_number": 58,
@@ -17513,7 +17513,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image appears to be a small, blurry section of a larger diagram or schematic. It shows a few interconnected lines and shapes, possibly representing electrical connections or components in a circuit. The exact nature of the components or their function cannot be determined due to the low resolution and lack of clear labels. The layout suggests a technical or engineering-related illustration."
+      "description": "The image appears to be a small, blurry section of a larger diagram or schematic. It shows a few interconnected lines and shapes, possibly representing nodes or components in a system. The lines suggest connections or pathways between these components, but the details are too unclear to identify specific elements or their functions. The overall impression is of a technical or engineering-related illustration."
     },
     {
       "page_number": 62,
@@ -17524,7 +17524,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a printed circuit board (PCB) with visible electronic components, including a microchip and several capacitors. There are also traces and solder points connecting the components. The board appears to be part of a larger electronic device, possibly a control module or sensor interface. The layout suggests a compact design typical of modern electronics."
+      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a clock mechanism. It has a circular shape with a central hole and what looks like a small notch or cutout on one side. The surface has a slightly textured, reflective finish, suggesting it may be made of metal or a similar material. The background is blurred, keeping the focus entirely on the object."
     },
     {
       "page_number": 63,
@@ -17535,7 +17535,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up view of a small, rectangular electronic component with two metal prongs extending from one end. The component appears to be a resistor or capacitor, commonly used in electronic circuits. The prongs are designed for insertion into a circuit board or breadboard. The body of the component is cylindrical and has colored bands, which typically indicate its resistance value or other specifications."
+      "description": "The image appears to be a simple line graph with two axes. The horizontal axis likely represents time or a sequential order, while the vertical axis measures an unspecified quantity. There is a single line showing a trend that generally increases from left to right, indicating a positive correlation over the measured period or sequence. The graph does not include any visible labels, titles, or gridlines to provide further context."
     },
     {
       "page_number": 66,
@@ -17546,7 +17546,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up view of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a watch mechanism. The object has a circular shape with a central hole and several evenly spaced protrusions around its edge. The surface has a slightly worn or textured appearance, suggesting it may be an older or used part."
+      "description": "The image shows a close-up of a printed circuit board (PCB) with visible electronic components, including a microchip and several capacitors. There are also two connectors or sockets, one of which appears to have a small wire or pin inserted. The board has multiple copper traces connecting the components, indicating a compact and densely packed design typical of modern electronics."
     },
     {
       "page_number": 66,
@@ -17557,7 +17557,7 @@
       "width": 600,
       "height": 412,
       "block_type": "image",
-      "description": "The image shows a 3D rendering of a mechanical component, likely a part of an electronic device or machinery. It appears to be a housing or casing with a central rectangular section and two extended arms or brackets on either side. The component has a smooth, metallic finish and includes small holes or slots, possibly for screws or connectors. The design suggests it could be used to hold or support another part within a larger assembly."
+      "description": "The image shows a 3D rendering of a rectangular object with a transparent top, revealing internal compartments. Inside, there are several small, rectangular components arranged in rows. The object appears to be a container or housing, possibly for electronic or mechanical parts, with a sliding or removable cover on one side. The overall design suggests it could be a part of a larger assembly or device."
     },
     {
       "page_number": 67,
@@ -17568,7 +17568,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object with a threaded end, likely a screw or bolt. The object has a hexagonal head and a smooth, cylindrical shaft with fine threading. The surface appears to be slightly worn or scratched, suggesting it may have been used or handled frequently. The background is plain and uncluttered, allowing the object to stand out clearly."
+      "description": "The image shows a close-up view of a small, dark-colored insect with a segmented body and six legs. The insect appears to have a somewhat oval-shaped body with visible antennae and a textured surface. The background is plain and light-colored, making the insect the main focus of the image."
     },
     {
       "page_number": 68,
@@ -17579,7 +17579,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a printed circuit board (PCB) with visible electronic components, including resistors, capacitors, and integrated circuits. The PCB has multiple soldered connections and traces that link the components. There are also some markings and labels on the board, though they are not fully legible. The overall design suggests it is part of an electronic device, likely used for signal processing or control."
+      "description": "The image shows a close-up of a small, metallic object with a threaded end, likely a screw or bolt. The object has a hexagonal head, indicating it is designed to be turned with a wrench or socket. The threading is fine and appears to be uniform along the shaft. The background is plain and white, providing no additional context."
     },
     {
       "page_number": 69,
@@ -17590,7 +17590,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object with a threaded end, likely a screw or bolt. The threading is visible along the shaft, and the head appears to have a hexagonal shape, suggesting it is designed to be turned with a wrench or socket. The object is placed on a flat surface, and the lighting highlights its metallic texture and reflective properties. No other objects or context are visible in the image."
+      "description": "The image shows a close-up of a small, metallic object with a threaded end and a hexagonal head, likely a screw or bolt. The threading is visible along the shaft, and the head has six flat sides for gripping with a tool. The object appears to be made of metal and is set against a plain background."
     },
     {
       "page_number": 69,
@@ -17601,7 +17601,7 @@
       "width": 367,
       "height": 450,
       "block_type": "image",
-      "description": "The image shows a screenshot of the \"Wireless Network Connection Properties\" window on a Windows operating system. It displays the \"Wireless Networks\" tab, where users can configure wireless network settings. The available networks list shows \"wireless\" and \"WaveLAN Network,\" with options to configure or refresh the network list. Below, there is a section for preferred networks, where users can add, remove, or adjust the priority of networks. The window also includes buttons for advanced settings and learning about wireless network configuration."
+      "description": "The image shows a screenshot of the \"Wireless Network Connection Properties\" window on a Windows operating system. The window has three tabs: General, Wireless Networks, and Advanced. The Wireless Networks tab is selected, displaying options to configure wireless network settings, including a list of available networks and preferred networks. The available networks section shows \"wireless\" and \"WaveLAN Network\" with buttons to configure or refresh the list. Below, there are options to add, remove, or adjust the properties of preferred networks, as well as buttons to move them up or down in priority."
     },
     {
       "page_number": 70,
@@ -17612,7 +17612,7 @@
       "width": 368,
       "height": 450,
       "block_type": "image",
-      "description": "The image shows a dialog box titled \"Wireless network properties\" with two tabs labeled \"Association\" and \"Authentication.\" The \"Association\" tab is selected and displays fields for entering a network name (SSID), network authentication type, data encryption settings, network key, and key index. The network authentication is set to \"Open,\" and data encryption is set to \"Disabled.\" There is also an option to have the key provided automatically and a checkbox for ad hoc network settings. The dialog includes \"OK\" and \"Cancel\" buttons at the bottom."
+      "description": "The image shows a dialog box titled \"Wireless network properties\" with two tabs labeled \"Association\" and \"Authentication.\" The \"Association\" tab is selected, displaying fields for the network name (SSID) set as \"wireless,\" network authentication type set to \"Open,\" and data encryption set to \"Disabled.\" Below these settings are fields for entering and confirming a network key, along with an option for automatic key provision and a key index field. The dialog box also includes checkboxes and buttons for OK and Cancel."
     },
     {
       "page_number": 71,
@@ -17623,7 +17623,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a metallic object with a threaded end, likely a bolt or screw. The threading is clearly visible, and the object appears to be made of a shiny, reflective material such as stainless steel or chrome. The background is blurred, making it difficult to determine the exact context or environment. The focus is primarily on the threading and the head of the object."
+      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a watch mechanism. It has a circular shape with a central hole and several evenly spaced protrusions around its edge. The surface has a slightly worn or textured appearance, suggesting it may be an old or frequently used part. The background is plain and light-colored, keeping the focus on the object itself."
     },
     {
       "page_number": 71,
@@ -17634,7 +17634,7 @@
       "width": 367,
       "height": 450,
       "block_type": "image",
-      "description": "The image shows a Windows XP dialog box titled \"Wireless Network Connection Properties.\" It includes a \"General\" tab with options to configure wireless network settings, a list of available networks (including \"wireless\" and \"WaveLAN Network\"), and a section for preferred networks. There are buttons for adding, removing, and configuring networks, as well as moving them up or down in priority. The dialog also has an \"Advanced\" button and standard \"OK\" and \"Cancel\" buttons at the bottom."
+      "description": "The image shows a Windows XP Wireless Network Connection Properties window. It displays a list of available networks, including \"wireless\" and \"WaveLAN Network,\" with options to configure or refresh the connection. Below, there is a section for preferred networks, currently listing \"wireless,\" along with buttons to add, remove, or adjust the order of these networks. The window also includes an \"Advanced\" button and standard OK and Cancel buttons."
     },
     {
       "page_number": 72,
@@ -17645,7 +17645,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object with a threaded end, likely a screw or bolt. The object has a hexagonal head, indicating it is designed to be turned with a wrench or socket. The threading appears fine and precise, suggesting it is meant for a specific mechanical application. The background is plain and unobtrusive, focusing attention on the object itself."
+      "description": "The image appears to be a black-and-white line graph with two distinct lines plotted against a grid. The horizontal axis likely represents time or a sequential variable, while the vertical axis measures an unspecified quantity. One line shows a generally increasing trend, while the other remains relatively flat or slightly decreasing. The exact labels or values on the axes are not clearly visible."
     },
     {
       "page_number": 73,
@@ -17656,7 +17656,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, rectangular electronic component with two metal prongs extending from one end. The component appears to be a resistor or capacitor, commonly used in electronic circuits. The body of the component is beige with a single colored band, likely indicating its value or tolerance. The metal prongs are tinned and bent slightly outward, suggesting it is designed to be inserted into a circuit board."
+      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a small machine. The object has a cylindrical shape with a threaded section and a hexagonal head, suggesting it could be a screw or bolt. The surface has a slightly worn or textured appearance, indicating it may have been used or handled frequently. The background is plain and light-colored, which helps to highlight the details of the object."
     },
     {
       "page_number": 73,
@@ -17667,7 +17667,7 @@
       "width": 368,
       "height": 450,
       "block_type": "image",
-      "description": "The image shows a dialog box titled \"Wireless network properties\" with two tabs labeled \"Association\" and \"Authentication.\" The \"Association\" tab is selected and displays fields for entering a network name (SSID), network authentication type (WPA-PSK), data encryption (AES), network key, and confirm network key. There is also an option for a key index and a checkbox for an automatically provided key. The dialog includes \"OK\" and \"Cancel\" buttons at the bottom."
+      "description": "The image shows a dialog box titled \"Wireless network properties\" with two tabs labeled \"Association\" and \"Authentication.\" It displays settings for a wireless network named \"wireless,\" including options for network authentication (set to WPA-PSK) and data encryption (set to AES). The dialog also includes fields for entering and confirming a network key, a key index field, and a checkbox for automatic key provision. Additionally, there is an option indicating whether the network is a computer-to-computer (ad hoc) network without wireless access points."
     },
     {
       "page_number": 74,
@@ -17678,7 +17678,7 @@
       "width": 368,
       "height": 450,
       "block_type": "image",
-      "description": "The image shows a dialog box titled \"Wireless network properties\" with two tabs labeled \"Association\" and \"Authentication.\" The \"Association\" tab is selected and displays fields for entering a network name (SSID), network authentication type, data encryption type, network key, and confirmation of the network key. There is also an option for a key index and a checkbox for automatic key provision. The dialog box includes \"OK\" and \"Cancel\" buttons at the bottom."
+      "description": "The image shows a dialog box titled \"Wireless network properties\" with two tabs labeled \"Association\" and \"Authentication.\" It displays settings for a wireless network named \"wireless,\" including fields for a wireless network key, network authentication type (set to \"Open\"), and data encryption (set to \"WEP\"). There are also fields for entering and confirming the network key, a key index option, and a checkbox for automatic key provision. The dialog appears to be configuring security settings for a wireless network connection."
     },
     {
       "page_number": 75,
@@ -17689,7 +17689,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object with a hexagonal head, likely a screw or bolt. The threading is visible along the shaft, and the head has distinct, evenly spaced grooves. The object appears to be made of a shiny, reflective material, possibly stainless steel or another metal alloy. The background is plain and white, providing contrast to highlight the object's details."
+      "description": "The image shows a close-up of a small, metallic object with a threaded end, likely a screw or bolt. The object has a hexagonal head, indicating it is designed to be turned with a wrench or socket. The threads appear fine and uniform, suggesting it is meant for precise or delicate applications. The background is plain and uncluttered, focusing attention on the object itself."
     },
     {
       "page_number": 78,
@@ -17700,7 +17700,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a single, small, light-colored object with a textured surface, possibly a seed or a grain. The object appears to be oval-shaped with a slightly rough exterior, and it is placed against a plain, dark background. There are no other objects or details visible in the image."
+      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a watch mechanism. It has a hexagonal hole in the center, suggesting it may be designed to fit onto a corresponding hexagonal shaft. The edges of the object are smooth, and there are no visible markings or labels on it. The background is plain and unobtrusive, allowing the object to be the clear focus of the image."
     },
     {
       "page_number": 81,
@@ -17711,7 +17711,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a small machine. The object has a hexagonal shape with a central hole and some visible grooves or ridges around its edges. The surface looks slightly worn or textured, suggesting it may have been used or handled frequently. The lighting highlights its metallic sheen and details of its structure."
+      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical part, possibly a gear or a washer. It has a hexagonal outer shape with a circular hole in the center. The surface has a slightly reflective, silver-colored finish, suggesting it could be made of metal or coated material. The object is placed on a flat surface, but no additional context or background details are visible."
     },
     {
       "page_number": 84,
@@ -17722,7 +17722,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a printed circuit board (PCB) with visible electronic components, including a microchip and several capacitors. There are also two connectors or sockets on the board, one of which appears to have a small ribbon cable inserted. The PCB has multiple solder points and traces connecting the components. The overall layout suggests it is part of a larger electronic device."
+      "description": "The image shows a close-up of a small, metallic object with a hexagonal head, likely a screw or bolt. The threads are visible and appear to be fine-pitched, suggesting it may be used for precision work. The surface has a slight sheen, indicating it could be made of stainless steel or another corrosion-resistant material. The object is placed on a flat, dark background, which contrasts with its metallic texture."
     },
     {
       "page_number": 85,
@@ -17733,7 +17733,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, dark-colored insect with a segmented body, six legs, and two long antennae. It appears to be a beetle or similar arthropod, positioned on a light-colored surface. The insect's details, such as its texture and body structure, are clearly visible. No additional context or background elements are discernible in the image."
+      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical or electronic component. It has a cylindrical shape with a threaded end and a flat, possibly hexagonal head, suggesting it could be a screw, bolt, or a similar fastener. The surface has a slightly reflective, silver-colored finish, indicating it may be made of stainless steel or another metal. The background is plain and white, which helps to highlight the object's details."
     },
     {
       "page_number": 87,
@@ -17744,7 +17744,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right, enclosed within a black square border. The arrow is centered within the square, and the overall design is minimalistic with no additional text or markings. The arrow appears to be a symbol or icon, likely indicating direction or progression."
+      "description": "The image shows a simple black arrow pointing to the right inside a black circle. The arrow is centered within the circle, creating a straightforward directional symbol. The design is minimalistic, with no additional elements or text present."
     },
     {
       "page_number": 87,
@@ -17755,7 +17755,7 @@
       "width": 35,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing triangle. The triangle is outlined in black with a thin border, and it appears to be centered against a plain background. There are no additional details, labels, or markings visible within or around the triangle."
+      "description": "The image shows a simple upward-pointing triangle. The triangle is solid black with no additional markings, labels, or internal details. It appears to be a basic geometric shape without any context or additional elements."
     },
     {
       "page_number": 88,
@@ -17766,7 +17766,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object with a threaded end, likely a screw or bolt. The object has a hexagonal head, indicating it is designed to be turned with a wrench or socket. The threads appear fine and precise, suggesting it may be used for securing components in machinery or electronics. The background is plain and white, focusing attention on the object itself."
+      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a watch mechanism. It has a cylindrical shape with a threaded section and a flat, circular top with a small hole in the center. The object is placed on a flat surface, and the lighting highlights its texture and details."
     },
     {
       "page_number": 89,
@@ -17777,7 +17777,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right inside a black circle. The arrow is centered within the circle, creating a universally recognized symbol often used to indicate direction or progression. The design is minimalist, with no additional elements or text."
+      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, creating a minimalist and straightforward design. There are no additional elements, labels, or details visible in the image."
     },
     {
       "page_number": 93,
@@ -17788,7 +17788,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, and the entire figure is set against a white background. The arrow appears to be a standard right-pointing symbol, often used to indicate direction or progression."
+      "description": "The image shows a simple black arrow pointing to the right, enclosed in a black square border. The arrow is centered within the square and points horizontally to the right side of the image. There are no additional elements, labels, or details visible in the image."
     },
     {
       "page_number": 94,
@@ -17799,7 +17799,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right. The arrow is enclosed in a square border and appears to be centered within the image frame. There are no additional elements, labels, or indicators present in the image."
+      "description": "The image shows a simple black arrow pointing to the right, enclosed in a black square border. The arrow is centered within the square and points horizontally toward the right side of the image. There are no additional details, labels, or other elements visible in the image."
     },
     {
       "page_number": 95,
@@ -17810,7 +17810,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right, enclosed in a black circle. The arrow is centered within the circle, and the entire figure appears to be a basic directional symbol or icon. There are no additional details, labels, or context provided in the image."
+      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square and points horizontally toward the right side of the image. There are no additional details, labels, or other elements visible in the image."
     },
     {
       "page_number": 96,
@@ -17821,7 +17821,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object with a threaded end, likely a screw or bolt. The object has a hexagonal head, indicating it is designed to be turned with a wrench or socket. The threading appears fine and precise, suggesting it is meant for a specific mechanical application. The background is plain and unobtrusive, keeping the focus on the object itself."
+      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a watch mechanism. The object has a cylindrical shape with a threaded section and a flat, circular top with a small hole in the center. The surface has a slightly reflective, silver finish, suggesting it may be made of metal like steel or aluminum. The background is blurred, keeping the focus entirely on the component."
     },
     {
       "page_number": 96,
@@ -17832,7 +17832,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right, enclosed in a square border. The arrow is centered within the square and is the only visible element in the image. There are no additional details, labels, or context provided."
+      "description": "The image shows a simple black arrow pointing to the right, enclosed in a black square. The arrow is centered within the square, and the entire figure appears to be a basic directional symbol or icon. There are no additional details, labels, or complex elements visible in the image."
     },
     {
       "page_number": 97,
@@ -17843,7 +17843,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right, enclosed within a black square border. The arrow is centered within the square, creating a minimalist directional symbol. There are no additional details, labels, or context provided in the image."
+      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square and points directly toward the right side of the image. There are no additional details, labels, or other elements visible in the image."
     },
     {
       "page_number": 100,
@@ -17854,7 +17854,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, and the entire figure is set against a white background. The design is minimalistic, with no additional text or elements visible."
+      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, creating a minimalist directional symbol. There are no additional elements, labels, or details visible in the image."
     },
     {
       "page_number": 100,
@@ -17865,7 +17865,7 @@
       "width": 35,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing triangle. The triangle is outlined in black with a thin border and appears to be empty inside. It is centered against a plain white background. The shape is symmetrical and has three equal sides."
+      "description": "The image shows a simple upward-pointing triangle. The triangle is outlined in black with a solid fill, creating a clear geometric shape. There are no additional details, labels, or markings within or around the triangle. The overall design is minimalistic and lacks any context or background elements."
     },
     {
       "page_number": 100,
@@ -17876,7 +17876,7 @@
       "width": 504,
       "height": 328,
       "block_type": "image",
-      "description": "The image shows a rectangular, transparent plastic container with a hinged lid. The lid is partially open, revealing a small orange object inside the container. The container has a smooth, glossy surface and appears to be designed for holding small items securely. The overall design suggests it could be used for storage or organization purposes."
+      "description": "The image shows a transparent plastic tray with a hinged lid, which appears to be designed for holding small items or samples. The tray has a rectangular shape with a slightly raised edge around the perimeter. The lid is partially open, revealing an orange-colored object inside, which could be a sample or a test tube. The tray has small circular holes along the sides, possibly for ventilation or attachment purposes."
     },
     {
       "page_number": 101,
@@ -17887,7 +17887,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a clock mechanism. It has a circular shape with a central hole and several evenly spaced protrusions around its edge. The surface has a slightly worn or tarnished appearance, suggesting it may be old or made of a non-precious metal. The background is blurred, keeping the focus entirely on the object."
+      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a clock mechanism. The object has a circular shape with a central hole and several smaller holes arranged around it, suggesting it may be designed to fit onto a shaft or be attached to other parts. The surface has a slightly worn or textured appearance, indicating it may be an older or frequently used piece."
     },
     {
       "page_number": 101,
@@ -17898,7 +17898,7 @@
       "width": 424,
       "height": 338,
       "block_type": "image",
-      "description": "The image shows a set of four rectangular electronic components with visible circuits and connectors. Each component has two rows of metal pins on either side, suggesting they are integrated circuits or similar electronic devices. The components are placed on a white background with orange arrows pointing toward them, possibly indicating direction or orientation. The overall setup appears to be part of an electronic assembly or testing setup."
+      "description": "The image shows a circuit board with multiple electronic components, including a central integrated circuit chip and several resistors. There are also two connectors on the left side of the board, one of which is a USB port. The board appears to be designed for interfacing or data transfer purposes, likely involving microcontroller or communication protocols. The orange arrows point to specific areas of interest, possibly highlighting key components or connection points."
     },
     {
       "page_number": 102,
@@ -17909,7 +17909,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, creating a straightforward directional symbol. The design is minimalistic, with no additional elements or text present."
+      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, creating a minimalist and straightforward visual. There are no additional elements, labels, or details visible in the image."
     },
     {
       "page_number": 102,
@@ -17920,7 +17920,7 @@
       "width": 424,
       "height": 338,
       "block_type": "image",
-      "description": "The image shows a close-up view of an electronic circuit board with multiple components. There are several integrated circuits (ICs) visible, along with a series of orange and black connectors on the left side. The board appears to be a part of a larger electronic device, possibly a computer or communication hardware, given the complexity and layout of the components. The connectors suggest it may interface with other boards or devices."
+      "description": "The image shows a circuit board with multiple electronic components, including a central integrated circuit chip and several resistors. There are also connectors on the left side of the board, likely for interfacing with other devices. The board appears to be designed for a specific electronic function, possibly related to signal processing or control systems."
     },
     {
       "page_number": 103,
@@ -17931,7 +17931,7 @@
       "width": 576,
       "height": 426,
       "block_type": "image",
-      "description": "The image shows a close-up view of a smartphone lying flat on a white surface. The phone is positioned at an angle, revealing its screen and part of its back. The screen displays a gradient background transitioning from purple to white. The phone has a camera module near the top left corner on the back. The overall scene is clean and minimalistic, with no other objects in the frame."
+      "description": "The image shows a close-up of a white plastic component with a rectangular slot and a small protruding tab. A small orange plastic piece is partially inserted into the slot, and a metal clip with a green circuit board is positioned nearby. The components appear to be part of a mechanical or electronic assembly, possibly a connector or a latch mechanism. The overall setup suggests a functional relationship between the plastic and metal parts, likely for securing or aligning components in a device."
     },
     {
       "page_number": 104,
@@ -17942,7 +17942,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image appears to be a black-and-white photograph of a person standing outdoors. The individual is wearing a hat and a long-sleeved shirt, with their arms crossed. The background is blurred, suggesting a natural setting, possibly a park or an open field. The person's face is not clearly visible, making it difficult to identify any specific details about their facial features."
+      "description": "The image shows a close-up of a small, dark-colored insect with a segmented body and six legs, likely an ant. Its head is slightly larger than its thorax, and its antennae are visible. The background is blurred, making it difficult to identify the exact environment or additional details. The lighting highlights the insect's texture and body structure."
     },
     {
       "page_number": 104,
@@ -17953,7 +17953,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square and points in a single direction without any additional markings or labels. The design is minimalistic and appears to be a basic directional symbol or icon."
+      "description": "The image shows a simple right-facing arrow enclosed in a square. The arrow is solid black and centered within the square, which has a thin black border. The design is minimalistic, with no additional text or markings. The arrow appears to be pointing to the right, indicating direction or progression."
     },
     {
       "page_number": 104,
@@ -17964,7 +17964,7 @@
       "width": 35,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing triangle. The triangle is outlined in black with a thin black border. There are no additional details, labels, or markings inside or around the triangle."
+      "description": "The image shows a simple upward-pointing triangle. The triangle is solid black with no additional markings, labels, or internal details. It appears to be a basic geometric shape without any additional context or elements."
     },
     {
       "page_number": 104,
@@ -17975,7 +17975,7 @@
       "width": 600,
       "height": 453,
       "block_type": "image",
-      "description": "The image shows a three-dimensional architectural model of a building placed on a white surface. The model appears to be a scaled-down representation of a structure with multiple levels and intricate details, including what looks like staircases and possibly balconies. The model is supported by two vertical rods, which help hold it in place. The overall design suggests a modern architectural style."
+      "description": "The image shows a three-dimensional architectural model of a building placed on a flat surface. The model appears to be a scaled-down representation of a structure with multiple floors and a complex roof design. The building is depicted with detailed exterior features, including windows and possibly decorative elements. The model is supported by small stands at its corners."
     },
     {
       "page_number": 105,
@@ -17997,7 +17997,7 @@
       "width": 576,
       "height": 426,
       "block_type": "image",
-      "description": "The image shows a green circuit board with multiple electronic components soldered onto it. There are several integrated circuits, capacitors, and connectors visible on the board. The board appears to be part of a larger electronic device, possibly a computer or communication hardware, given the complexity and layout of the components. The image is taken from an overhead perspective, highlighting the intricate connections and components on the board."
+      "description": "The image shows a green circuit board with various electronic components soldered onto it. There are multiple integrated circuits, capacitors, resistors, and connectors visible. The board appears to be a part of a larger electronic device, possibly a computer or communication hardware, given the complexity and layout of the components."
     },
     {
       "page_number": 106,
@@ -18008,7 +18008,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a printed circuit board (PCB) with visible electronic components, including resistors, capacitors, and integrated circuits. There are also several soldered connections and traces on the board. The components appear to be arranged in a compact layout, typical of a PCB designed for a specific electronic function. The image does not provide any readable text or labels."
+      "description": "The image shows a close-up view of a small, metallic object with a threaded end, likely a screw or bolt. The object has a hexagonal head, indicating it is designed to be turned with a wrench or socket. The threading appears fine and precise, suggesting it is meant for securing materials together in a mechanical or construction context. The background is blurred, keeping the focus entirely on the object itself."
     },
     {
       "page_number": 106,
@@ -18019,7 +18019,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right, enclosed in a square border. The arrow is centered within the square and is the only visible element in the image. There are no additional details, labels, or context provided."
+      "description": "The image shows a simple black arrow pointing to the right, enclosed in a black square border. The arrow is centered within the square and points horizontally toward the right side of the image. There are no additional elements, labels, or details visible in the image."
     },
     {
       "page_number": 106,
@@ -18030,7 +18030,7 @@
       "width": 35,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple upward-pointing triangle. The triangle is solid black and appears to be centered within the frame. There are no additional elements, labels, or markings visible in the image."
+      "description": "The image shows a simple upward-pointing triangle. The triangle is outlined in black with a thin border. It appears to be a basic geometric shape without any additional details or context."
     },
     {
       "page_number": 106,
@@ -18041,7 +18041,7 @@
       "width": 576,
       "height": 426,
       "block_type": "image",
-      "description": "The image shows a circuit board with multiple electronic components soldered onto it. There are several integrated circuits, capacitors, resistors, and connectors visible. The board appears to be a prototype or development board, possibly used for testing or educational purposes. The components are arranged in a compact layout, with some labeled areas marked by orange and green stickers."
+      "description": "The image shows a close-up view of a circuit board with multiple electronic components soldered onto it. There are several integrated circuits, capacitors, resistors, and connectors visible. The board appears to be a part of a larger electronic device, possibly a computer or communication hardware, given the complexity and density of the components. The components are arranged in a structured manner, with some labeled areas indicating specific sections or functions on the board."
     },
     {
       "page_number": 107,
@@ -18052,7 +18052,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right, enclosed in a black square border. The arrow is centered within the square and points horizontally toward the right side of the image. There are no additional elements, labels, or details visible in the image."
+      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, creating a minimalist design often used as a symbol for play, forward movement, or progression. The overall appearance is clean and straightforward, with no additional elements or text."
     },
     {
       "page_number": 107,
@@ -18063,7 +18063,7 @@
       "width": 552,
       "height": 474,
       "block_type": "image",
-      "description": "The image shows a laboratory setup featuring a rectangular metal tray with a lid, likely used for gel electrophoresis. Inside the tray, there is a gel cassette with wells at the top, where samples are loaded. The setup includes electrodes and a power supply unit connected by wires, indicating that an electric field will be applied to separate molecules in the gel. A hand is holding a pipette, suggesting the preparation or loading of samples into the gel wells."
+      "description": "The image shows a 3D rendering of a mechanical assembly with a transparent housing. Inside the housing, there is a cylindrical component with visible mechanical parts, including a central shaft and what appears to be a gear or pulley system. The assembly is mounted on a base plate with several screws securing it in place. The transparent cover allows a clear view of the internal mechanism."
     },
     {
       "page_number": 108,
@@ -18074,7 +18074,7 @@
       "width": 179,
       "height": 339,
       "block_type": "image",
-      "description": "The image shows three stacked, transparent cubes with a wireframe pattern inside each. The cubes are aligned vertically, with the top cube slightly offset to the left. The wireframe inside each cube forms a three-dimensional shape with intersecting lines, creating a geometric pattern. The cubes appear to be made of a translucent material, allowing the internal structure to be visible."
+      "description": "The image shows three separate views of a transparent plastic storage box with a hinged lid. The box has a rectangular shape with a grid-like pattern on the inside, likely for organizing small items. The lid is designed to snap securely onto the base. The views include a top-down perspective, a side view, and a bottom view, all showing the same box from different angles."
     },
     {
       "page_number": 108,
@@ -18085,7 +18085,7 @@
       "width": 504,
       "height": 375,
       "block_type": "image",
-      "description": "The image shows a transparent plastic container with a hinged lid, which appears to be designed for storing items. The container has a small rectangular compartment on the lid, possibly for holding a small object or label. The container has a snap closure mechanism on one side, indicating it can be securely closed. The overall design suggests it could be used for organizing small parts, jewelry, or other small items."
+      "description": "The image shows a transparent plastic box with a hinged lid, which appears to be a storage or display case. Inside the box, there is a single orange object, possibly a small figurine or a model. The box has a clear, rectangular base with a slightly raised platform inside, and the lid is attached with a hinge on one side. The overall design suggests it could be used for protecting or showcasing collectible items."
     },
     {
       "page_number": 109,
@@ -18096,7 +18096,7 @@
       "width": 506,
       "height": 462,
       "block_type": "image",
-      "description": "The image shows a detailed floor plan of a small apartment. The layout includes a combined living and dining area, a kitchen, a bedroom, and a bathroom. The plan also shows furniture arrangements, such as a sofa, dining table, bed, and kitchen appliances. There are arrows indicating directions or possible movement paths within the apartment."
+      "description": "The image shows a detailed diagram of a laboratory setup involving a distillation process. The main components include a distillation flask, a condenser, a receiving flask, and a heating mantle. The diagram illustrates the flow of liquid through the system, starting from the distillation flask where the liquid is heated, moving through the condenser where it is cooled and condensed, and finally collecting in the receiving flask. The setup appears to be designed for separating components of a liquid mixture based on their boiling points."
     },
     {
       "page_number": 110,
@@ -18107,7 +18107,7 @@
       "width": 600,
       "height": 483,
       "block_type": "image",
-      "description": "The image shows a laptop computer with a stylus pen placed on top of it. The laptop screen displays a digital drawing or painting application with a brush tool selected, indicating that the device is being used for digital art or design. The stylus appears to be hovering over the screen, suggesting it is being used for precise input. The overall scene conveys a creative or professional workflow involving digital illustration."
+      "description": "The image shows a laptop with a transparent, glowing blue overlay highlighting various components inside, such as the keyboard, screen, and internal circuitry. Below the laptop, there is a smaller, detached transparent blue panel with similar internal details visible. The glowing blue elements suggest a focus on the laptop's internal structure and design."
     },
     {
       "page_number": 110,
@@ -18118,7 +18118,7 @@
       "width": 600,
       "height": 400,
       "block_type": "image",
-      "description": "The image shows a close-up view of a computer keyboard with a small rectangular device placed in front of it. The device appears to be a card reader or a card scanning tool, possibly used for digitizing physical cards or documents. The keyboard is a standard QWERTY layout with visible keys and a trackpad to the right. The overall scene suggests a workspace setup, likely for data entry or document processing."
+      "description": "The image shows a computer keyboard with a small rectangular device placed in front of it. The device appears to be a card reader or a small electronic gadget, possibly used for scanning or inputting information. The keyboard is a standard QWERTY layout with a numeric keypad on the right side. The background is plain and light-colored, which helps emphasize the keyboard and the device."
     },
     {
       "page_number": 111,
@@ -18129,7 +18129,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right, enclosed in a black square border. The arrow is centered within the square and points horizontally toward the right side of the image. There are no additional details, labels, or markings visible in the image."
+      "description": "The image shows a simple black arrow pointing to the right. The arrow is enclosed in a square border. There are no additional details, labels, or context provided within the image itself."
     },
     {
       "page_number": 111,
@@ -18140,7 +18140,7 @@
       "width": 600,
       "height": 400,
       "block_type": "image",
-      "description": "The image shows a close-up view of a computer keyboard with a small, rectangular device placed in front of it. The device appears to be a USB flash drive or a similar portable storage device, partially inserted into a USB port on the keyboard. The keyboard has a standard layout with visible keys and a metallic or brushed surface finish. The background is plain and white, keeping the focus on the keyboard and the device."
+      "description": "The image shows a close-up view of a computer keyboard with a small USB flash drive placed on top of it. The keyboard has a standard layout with black keys and white lettering. The flash drive is connected to the keyboard via a short cable, suggesting it may be used for data transfer or storage. The overall scene appears to be a simple setup, likely for demonstrating or testing the flash drive's functionality."
     },
     {
       "page_number": 112,
@@ -18151,7 +18151,7 @@
       "width": 600,
       "height": 400,
       "block_type": "image",
-      "description": "The image shows a close-up view of a computer keyboard with a smartphone placed in front of it. The keyboard has a standard layout with visible keys and a numeric keypad. The smartphone screen displays a blurred image of a person's face. The background is plain and white, keeping the focus on the keyboard and smartphone."
+      "description": "The image shows a close-up view of a computer keyboard with a magnifying glass hovering over it, focusing on the keys. In the foreground, there is a smartphone displaying a magnified view of the keyboard keys. The background is a plain, light-colored surface. The magnifying glass and smartphone screen both highlight the details of the keyboard's keys, emphasizing the act of examining or inspecting them closely."
     },
     {
       "page_number": 114,
@@ -18162,7 +18162,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a clock mechanism. It has a circular shape with a central hole and what looks like a small protruding arm or lever. The surface has a slightly textured, reflective finish, suggesting it may be made of metal or a similar material. The object is placed on a flat surface, and the background is blurred, keeping the focus on the component itself."
+      "description": "The image shows a close-up of a small, metallic object, likely a screw or bolt, with a hexagonal head and threading. The object appears to be placed on a flat surface, possibly a piece of paper or a document. The lighting highlights the texture and details of the threading and head. There are no visible labels, numbers, or additional context provided in the image."
     },
     {
       "page_number": 121,
@@ -18173,7 +18173,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a metallic surface with a visible circular pattern, possibly a logo or a stamped mark. The surface appears to be part of a mechanical or industrial component, with a smooth, reflective finish. The circular mark has a slightly raised edge and a textured center, suggesting it may have been created by a tool or machine. The background is blurred, keeping the focus on the patterned area."
+      "description": "The image shows a close-up of a small, metallic object, likely a screw or bolt, with a hexagonal head. The threading is visible along the shaft, and the head has six evenly spaced flat sides. The object appears to be made of metal, possibly steel or aluminum, and is set against a plain background."
     },
     {
       "page_number": 121,
@@ -18184,7 +18184,7 @@
       "width": 30,
       "height": 30,
       "block_type": "image",
-      "description": "The image shows a simple black arrow pointing to the right inside a black square. The arrow is centered within the square, creating a minimalist design. There are no additional details, labels, or elements visible in the image."
+      "description": "The image shows a simple right-pointing arrow enclosed in a square. The arrow is centered within the square and points to the right. The design is minimalistic with no additional elements or text."
     },
     {
       "page_number": 122,
@@ -18195,7 +18195,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a small, metallic object with a hexagonal head, likely a screw or bolt. The threading is visible along the shaft, and the head has distinct, evenly spaced indentations typical of a Phillips drive. The object appears to be resting on a flat surface, possibly a table or workbench. No other objects or background details are clearly visible."
+      "description": "The image shows a close-up of a printed circuit board (PCB) with visible electronic components, including resistors, capacitors, and integrated circuits. There are several soldered connections and traces on the board, indicating a complex layout typical of electronic devices. The components appear to be densely packed, suggesting a compact design. The background is plain, focusing attention on the PCB itself."
     },
     {
       "page_number": 124,
@@ -18206,7 +18206,7 @@
       "width": 26,
       "height": 26,
       "block_type": "image",
-      "description": "The image shows a close-up of a printed circuit board (PCB) with visible electronic components, including resistors, capacitors, and integrated circuits. There are several soldered connections and traces on the board, indicating a complex layout typical of electronic devices. The components are densely packed, suggesting a compact design, possibly for a small electronic gadget or module. The image does not contain any text or labels that can be read clearly."
+      "description": "The image shows a close-up of a small, metallic object that appears to be a mechanical component, possibly a gear or a part of a small machine. The object has a cylindrical shape with a threaded section and a hexagonal head, suggesting it could be a bolt or a screw. The surface has a slightly worn or textured appearance, indicating it may have been used or handled frequently. The background is plain and light-colored, which helps to highlight the details of the object."
     }
   ]
 }

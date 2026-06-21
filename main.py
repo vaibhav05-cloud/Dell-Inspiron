@@ -345,6 +345,7 @@ def run_query(query: str, rerank_top_k: int = 15, token_budget: int = 4000) -> N
     logger.info(f"  Answer Generation  : {answer_gen_ms:>8.1f} ms")
     logger.info(f"  Total Query Process: {total_query_ms:>8.1f} ms")
     logger.info("=" * 60)
+    return final_output
 
 
 def main():
